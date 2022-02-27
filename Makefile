@@ -20,6 +20,12 @@ endif
 # COMMANDS                                                                      #
 #################################################################################
 
+# ORDER OF OPERATIONS
+# 0.1 create_fine_root_shapes.R
+# 1.0 create_all_trait_data.R
+# 2.0 create_all_reponse_vars_noagg.R
+# 3.0 create_focal_response_vars_agg.R
+
 ## Install Python Dependencies
 requirements: test_environment
 	$(PYTHON_INTERPRETER) -m pip install -U pip setuptools wheel
