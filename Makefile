@@ -21,10 +21,16 @@ endif
 #################################################################################
 
 # ORDER OF OPERATIONS
+# Data Creation
 # 0.1 create_fine_root_shapes.R
+# Feature Engineering / Transformation
 # 1.0 create_all_trait_data.R
 # 2.0 create_all_reponse_vars_noagg.R
 # 3.0 create_focal_response_vars_agg.R
+# 4.0 transform_traits_for_pics.R
+# 5.0 create_pics_all_traits.R
+# 6.0 create_pics_w_zero_exclusions.R
+# Modeling
 
 ## Install Python Dependencies
 requirements: test_environment
