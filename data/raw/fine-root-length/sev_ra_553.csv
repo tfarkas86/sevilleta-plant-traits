@@ -1,0 +1,5 @@
+image, root_name, root, length, vector_length, surface, volume, direction, diameter, root_order, root_ontology, parent_name, parent, insertion_position, insertion_angle, n_child, child_density, first_child, insertion_first_child, last_child, insertion_last_child
+sev_ra_553, R4, 235ec630-1892-4a38-a636-351064f03fb7, 1.2891951, 1.2139894, 0.042516403, 1.1467075E-4, 267.5480174127241, 0.010334475, 0, Primary root, -1, -1, -0.008466667, -57.29577951308232, 0, 0.0, null, null, null, null
+sev_ra_553, R3, 508fb5bd-e6c0-4e39-8ca3-d158bdfdc124, 0.15476805, 0.12930623, 0.004938668, 1.2734528E-5, 109.31321615633547, 0.009848248, 0, Primary root, -1, -1, -0.008466667, -57.29577951308232, 0, 0.0, null, null, null, null
+sev_ra_553, R2, 7c696ea0-688d-4b2b-bff3-3b14581beadb, 2.7137134, 1.9284836, 0.16033655, 9.1862003E-4, 212.84791468992174, 0.018972186, 0, Primary root, -1, -1, -0.008466667, -57.29577951308232, 0, 0.0, null, null, null, null
+sev_ra_553, R1, 29db8d75-4d5d-4a19-9934-662d1b359364, 1.2730114, 1.1970029, 0.054550257, 1.940964E-4, 237.94283566287064, 0.013851403, 0, Primary root, -1, -1, -0.008466667, -57.29577951308232, 0, 0.0, null, null, null, null

@@ -1,0 +1,690 @@
+kartez,family,genus,species,subspecies_variety,common name,photosynthetic_pathway,life_cycle,life_form,native,path,a_p,g_f,apgf
+ACRE3,Asteraceae,Acroptilon,repens,,hardheads,,p,H,n,C3,p,f,p_f
+AGGI2,Poaceae,Agrostis,gigantea,,redtop,,p,G,n,C3,p,g,p_g
+AIAL,Simaroubaceae,Ailanthus,altissima,,tree of heaven,,p,T,n,C3,p,t,p_t
+AMBL,Amaranthaceae,Amaranthus,blitoides,,mat amaranth,C4,a,H,n,C4,a,f,a_f
+BAHY,Chenopodiaceae,Bassia,hyssopifolia,,hybrid beardgrass,,a,H,n,NA,a,f,a_f
+BASC5,Chenopodiaceae,Bassia,scoparia,,burningbush,,a,H,n,NA,a,f,a_f
+BRTE,Poaceae,Bromus,tectorum,,cheatgrass,C3,a,G,n,C3,a,g,a_g
+CHAL7,Chenopodiaceae,Chenopodium,album,,lambsquarters,C3,a,H,n,C3,a,f,a_f
+CHAM,Chenopodiaceae,Chenopodium,ambrosioides,,Mexican tea,C3,ap,ss/H,n,C3,p,f,p_f
+CHGL3,Chenopodiaceae,Chenopodium,glaucum,,oakleaf goosefoot,,a,H,n,NA,a,f,a_f
+CHRU,Chenopodiaceae,Chenopodium,rubrum,,red goosefoot,C3,a,H,n,C3,a,f,a_f
+COAR4,Convolvulaceae,Convolvulus,arvensis,,field bindweed,C3,p,V/H,n,C3,p,f,p_f
+COCA5,Asteraceae,Conyza,canadensis,,Canadian horseweed,,ab,H,n,C3,a,f,a_f
+CYOF,Boraginaceae,Cynoglossum,officinale,,gypsyflower,,b,H,n,C3,a,f,a_f
+DESO2,Brassicaceae,Descurainia,sophia,,herb sophia,,ab,H,n,C3,a,f,a_f
+ERBA2,Poaceae,Eragrostis,barrelieri,,Mediterranean lovegrass,C4,a,G,n,C4,a,g,a_g
+ERCI,Poaceae,Eragrostis,cilianensis,,stinkgrass,,a,G,n,C4,a,g,a_g
+ERCI6,Geraniaceae,Erodium,cicutarium,,redstem stork's bill,C3,ab,H,n,C3,a,f,a_f
+EUDA5,Euphorbiaceae,Euphorbia,davidii,,David's spurge,,a,H,n,NA,a,f,a_f
+LASE,Asteraceae,Lactuca,serriola,,prickly lettuce,C3,ab,H,n,C3,a,f,a_f
+MOCE,Molluginaceae,Mollugo,cerviana,,threadstem carpetweed,,a,H,n,C4,a,f,a_f
+POLA4,Polygonaceae,Polygonum,lapathifolia,,curlytop knotweed,C3,a,H,n,C3,a,f,a_f
+POMO5,Poaceae,Polypogon,monspeliensis,,annual rabbitsfoot grass,C3,a,G,n,C3,a,g,a_g
+POVI9,Poaceae,Polypogon,viridis,,beardless rabbitsfoot grass,,p,G,n,C3,p,g,p_g
+PRSA2,Pedaliaceae,Proboscidea,sabulosa,,sanddune unicorn-plant,C3,a,H,n,C3,a,f,a_f
+RARA2,Brassicaceae,Raphanus,raphanistrum,,wild radish,,ab,H,n,C3,a,f,a_f
+ROIS2,Brassicaceae,Rorippa,islandica,,northern marsh yellowcress,,ab,H,n,C3,a,f,a_f
+SAKA,Chenopodiaceae,Salsola,kali,,Russian thistle,C4,a,H,n,C4,a,f,a_f
+SATR12,Chenopodiaceae,Salsola,tragus,,prickly Russian thistle,,a,H,n,C4,a,f,a_f
+SCLA6,Asteraceae,Scorzonera,laciniata ,,cutleaf vipergrass,C3,p,H,n,C3,p,f,p_f
+SEPU8,Poaceae,Setaria,pumila,,yellow foxtail,,a,G,n,NA,a,g,a_g
+SIAL2,Brassicaceae,Sisymbrium,altissimum,,,,ab,H,n,C3,a,f,a_f
+SIIR,Brassicaceae,Sisymbrium,irio,,London rocket,,a,H,n,C3,a,f,a_f
+SOAS,Asteraceae,Sonchus,asper,,spiny sowthistle,,a,H,n,C3,a,f,a_f
+SOHA,Poaceae,Sorghum,halepense,,Johnsongrass,C4,p,G,n,C4,p,g,p_g
+TACH2,Tamaricaceae,Tamarix,chinensis,,five-stamen tamarisk,,p,T/S,n,C3,p,t,p_t
+TARA,Tamaricaceae,Tamarix,ramosissima,,saltcedar,,p,T/S,n,C3,p,t,p_t
+TRAE,Poaceae,Triticum,aestivum,,common wheat,C3,a,G,n,C3,a,g,a_g
+TRDU,Asteraceae,Tragopogon,dubius,,yellow salsify,C3,ab,H,n,C3,a,f,a_f
+TRTE,Zygophyllaceae,Tribulus,terrestris,,punturevine,C4,a,H,n,C4,a,f,a_f
+TYDO,Typhaceae,Typha,domingensis,,southern cattail,,p,H,n,NA,p,f,p_f
+TYLA,Typhaceae,Typha,latifolia,,broadleaf cattail,,p,H,n,NA,p,f,p_f
+XASP2,Asteraceae,Xanthium,spinosum,,spiny cocklebur,C3,a,H,n,C3,a,f,a_f
+ABFR2,Nyctaginaceae,Abronia,fragrans,,snowball sand verbena,,p,H,y,C3,p,f,p_f
+ACGL,Aceraceae,Acer,glabrum,,Rocky Mountain maple,,p,S/T,y,C3,p,t,p_t
+ACHY,Poaceae,Achnatherum,hymenoides,,Indian ricegrass ,C3,p,G,y,C3,p,g,p_g
+ACNA2,Asteraceae,Acourtia,nana,,dwarf desertpeony,C3,p,H,y,C3,p,f,p_f
+ACNE,Euphorbiaceae,Acalypha,neomexicana,,New Mexico copperleaf,,a,H,y,C3,a,f,a_f
+ACNE2,Aceraceae,Acer,negundo,,boxelder,,p,T,y,C3,p,t,p_t
+ACNEI2,Aceraceae,Acer,negundo,var. interius,boxelder,,p,T ,y,C3,p,t,p_t
+AGHE5,Asteraceae,Ageratina ,herbacea,,fragrant snakeroot,,p,ss/H,y,C3,p,f,p_f
+ALCE2,Liliaceae,Allium,cernuum,,nodding onion,,p,H,y,C3,p,f,p_f
+ALFI3,Apiaceae,Aletes,filifolius,,Trans-Pecos Indian parsley,,p,ss/H,y,C3,p,f,p_f
+ALGE,Liliaceae,Allium,geyeri,,Geyer's onion,,p,H,y,C3,p,f,p_f
+ALIN,Nyctaginaceae,Allionia,incarnata,,trailing windmills,C4,ap,H,y,C4,p,f,p_f
+ALMA4,Liliaceae,Allium,macropetalum,,largeflower wild onion,C3,p,H,y,C3,p,f,p_f
+ALOC2,Chenopodiaceae,Allenrolfea,occidentalis,,iodinebush,C3,p,S/ss/su,y,C3,p,s,p_s
+ALPA14,Asteraceae,Almutaster,pauciflorus,,alkali marsh aster,C3,p,H,y,C3,p,f,p_f
+ALWR,Verbenaceae,Aloysia,wrightii,,Wright's beebrush,C3,p,S,y,C3,p,s,p_s
+AMAC2,Asteraceae,Ambrosia,acanthicarpa,,flatspine bur ragweed,,a,H,y,C3,a,f,a_f
+AMAL,Amaranthaceae,Amaranthus,albus,,prostrate pigweed,C4,a,H,y,C4,a,f,a_f
+AMAR2,Asteraceae,Ambrosia,artemisiifolia,,annual ragweed,,a,H,y,C3,a,f,a_f
+AMCH3,Nyctaginaceae,Ammocodon,chenopodioides,,goosefoot moonpod,C3,p,H,y,C3,p,f,p_f
+AMCO3,Asteraceae,Ambrosia,confertiflora,,weakleaf bur ragweed,,p,H,y,C3,p,f,p_f
+AMFU,Apocynaceae,Amsonia,fugatei,,San Antonio bluestar,,p,H,y,C3,p,f,p_f
+AMHY,Amaranthaceae,Amaranthus,hybridus,,slim amaranth,C4,a,H,y,C4,a,f,a_f
+AMPA,Amaranthaceae,Amaranthus,palmeri,,carlessweed,C4,a,H,y,C4,a,f,a_f
+AMPA5,Apocynaceae,Amsonia,palmeri,,Palmer's bluestar,,p,H,y,C3,p,f,p_f
+AMPO2,Amaranthaceae,Amaranthus,powellii,,Powell's amaranth,C4,a,H,y,C4,a,f,a_f
+ANCA10,Saururaceae,Anemopsis,californica,,yerba mansa,,p,H,y,C3,p,f,p_f
+APAN2,Apocynaceae,Apocynum,androsaemifolium,,spreading dogbane,C3,p,H,y,C3,p,f,p_f
+APRA,Asteraceae,Aphanostephus,ramosissimus,,plains dosedaisy,C3,ap,H,y,C3,p,f,p_f
+APRAH,Asteraceae,Aphanostephus,ramosissimus,var. humilis,plains dosedaisy,C3,ap,H,y,C3,p,f,p_f
+ARAD,Poaceae,Aristida,adscensionis,,sixweeks threeawn,C4,a,G,y,C4,a,g,a_g
+ARAR6,Poaceae,Aristida,arizonica,,Arizona threeawn,C4,p,G,y,C4,p,g,p_g
+ARBI3,Asteraceae,Artemisia,bigelovii,,Bigelow sagebrush,,p,S/ss,y,C3,p,s,p_s
+ARCA12,Asteraceae,Artemisia,campestris,,field sagewort,C3,bp,H,y,C3,p,f,p_f
+ARCA14,Asteraceae,Artemisia,carruthii,,Carruth's sagewort,,p,H,y,C3,p,f,p_f
+ARDI5,Poaceae,Aristida,divaricata,,poverty threeawn,C4,p,G,y,C4,p,g,p_g
+ARDR,Brassicaceae,Arabis,drummondii,,Dummond's rockcress,,bp,H,y,C3,p,f,p_f
+ARDR4,Asteraceae,Artemisia,dracunculus,,wormwood,,p,ss/H,y,C3,p,f,p_f
+ARFE5,Pteridaceae,Argyrochosma,fendleri,,Fendler's false cloak ferm,,p,H,y,C3,p,f,p_f
+ARFEF,Brassicaceae,Arabis,fendleri, var. fendleri,Fendler's rockcress,C3,p,ss/H,y,C3,p,f,p_f
+ARFI2,Asteraceae,Artemisia,filifolia,,sand sagebrush,,p,S/ss,y,C3,p,s,p_s
+ARFR4,Asteraceae,Artemisia,frigida,,prairie sagewort,,p,ss,y,C3,p,s,p_s
+ARHA3,Poaceae,Aristida,havardii,,Harvard's threeawn,C4,p,G,y,C4,p,g,p_g
+ARIST,Poaceae,Aristida,sp.,,three awn,C4,p,G,y,C4,p,g,p_g
+ARLU,Asteraceae,Artemisia,ludoviciana,,white sagebrush,C3,p,ss/H,y,C3,p,f,p_f
+ARLUA,Asteraceae,Artemisia,ludoviciana,subsp. albula,white sagebrush,C3,p,ss/H,y,C3,p,f,p_f
+ARLUL2,Asteraceae,Artemisia,ludoviciana,subsp. ludoviciana,white sagebrush,C3,p,ss/H,y,C3,p,f,p_f
+ARPA9,Poaceae,Aristida,pansa,,Wooton's threeawn,C4,p,G,y,C4,p,g,p_g
+ARPE2,Brassicaceae,Arabis,perennans,,perennial rockcress,,p,ss/H,y,C3,p,f,p_f
+ARPU9,Poaceae,Aristida,purpurea,,purple threeawn,C4,ap,G,y,C4,p,g,p_g
+ARPUF,Poaceae,Aristida,purpurea,var. fendleriana,Fendler's threeawn,C4,p,G,y,C4,p,g,p_g
+ARPUL,Poaceae,Aristida,purpurea,var. longiseta,Fendler threeawn,C4,p,G,y,C4,p,g,p_g
+ARPUN,Poaceae,Aristida,purpurea,var. nealleyi,blue threeawn,C4,p,G,y,C4,p,g,p_g
+ARPUW,Poaceae,Aristida,purpurea,var. wrightii,Wright's threeawn,C4,p,G,y,C4,p,g,p_g
+ASAL5,Fabaceae,Astragalus,albulus,,cibola milkvetch,,p,ss/H,y,C3,p,f,p_f
+ASASA,Asclepiadaceae,Asclepias,asperula,subsp. asperula,spider milkweed,C3,p,H,y,C3,p,f,p_f
+ASBR,Asclepiadaceae,Asclepias,brachystephana,,bract milkweed,C3,p,H,y,C3,p,f,p_f
+ASEN,Asclepiadaceae,Asclepias,engelmanniana,,Engelmann's milkweed,C3,p,H,y,C3,p,f,p_f
+ASFE2,Fabaceae,Astragalus,missouriensis,var. mimetes,horn loco milkvetch,,p,H,y,C3,p,f,p_f
+ASLA4,Asclepiadaceae,Asclepias,latifolia,,broadleaf milkweed,C3,p,H,y,C3,p,f,p_f
+ASLE8,Fabaceae,Astragalus,lentiginosus,,freckled milkvetch,,abp,S/ss/H,y,C3,p,s,p_s
+ASLED,Fabaceae,Astragalus,lentiginosus,var. diphysus,freckled milkvetch,,p,H,y,C3,p,f,p_f
+ASMA,Asclepiadaceae,Asclepias,macrotis,,longhood milkweed,C3,p,ss,y,C3,p,s,p_s
+ASMI10,Fabaceae,Astragalus,missouriensis,,Missouri milkvetch,,p,ss/H,y,C3,p,f,p_f
+ASMIM,Fabaceae,Astragalus,missouriensis,,Missouri milkvetch,,p,ss/H,y,C3,p,f,p_f
+ASNU4,Fabaceae,Astragalus,nuttallianus,,smallflowered milkvetch,C3,ap,H,y,C3,p,f,p_f
+ASNUA,Fabaceae,Astragalus,nuttallianus,var. austrinus,smallflowered milkvetch,C3,a,H,y,C3,a,f,a_f
+ASPR5,Fabaceae,Astragalus,praelongus,,stinking milkvetch,,p,H,y,C3,p,f,p_f
+ASPRE,Fabaceae,Astragalus,praelongus,var. ellisiae,Ellis' stinking milkvetch,,p,H,y,C3,p,f,p_f
+ASPRP2,Fabaceae,Astragalus,praelongus,var. praelongus,stinking milkvetch,,p,H,y,C3,p,f,p_f
+ASRE,Aspleniaceae,Asplenium,resiliens,,blackstem spleenwart,,p,H,y,NA,p,f,p_f
+ASSP,Asclepiadaceae,Asclepias,speciosa,,showy milkweed,C3,p,H,y,C3,p,f,p_f
+ASSU2,Asclepiadaceae,Asclepias,subverticillata,,horsetail milkweed,C3,p,H,y,C3,p,f,p_f
+ASTE8,Fabaceae,Astragalus,tephrodes,,ashen milkvetch,C3,p,H,y,C3,p,f,p_f
+ASTRA,Fabaceae,Astragalus,sp,,,C3,p,H,y,C3,p,f,p_f
+ATARA,Chenopodiaceae,Atriplex,argentea,subsp. argentea,silverscale saltbush,C4,ap,H,y,C4,p,f,p_f
+ATARE,Chenopodiaceae,Atriplex,argentea,subsp. expansa,silverscale saltbush,,ap,H,y,C4,p,f,p_f
+ATCA2,Chenopodiaceae,Atriplex,canescens,,fourwing saltbush,C4,p,S,y,C4,p,s,p_s
+ATCO,Chenopodiaceae,Atriplex,confertifolia,,shadescale saltbush,C4,p,ss/H,y,C4,p,f,p_f
+ATSA,Chenopodiaceae,Atriplex,saccaria,,sack saltbush,,a,H,y,C4,a,f,a_f
+BAAB,Asteraceae,Bahia,absinthifolia,,hairyseed bahia,C3,p,H,y,C3,p,f,p_f
+BAABA,Asteraceae,Bahia,absinthifolia,var. absinthifolia,hairyseed bahia,C3,p,H,y,C3,p,f,p_f
+BAABD,Asteraceae,Bahia,absinthifolia,var. dealbata,Dealbata's bahia,C3,p,H,y,C3,p,f,p_f
+BADI,Asteraceae,Bahia,dissecta,,ragleaf bahia,,abp,H,y,C3,p,f,p_f
+BAEM,Asteraceae,Baccharis,emoryi,,Emory's baccharis,,p,S,y,C3,p,s,p_s
+BAMU,Asteraceae,Baileya,multiradiata,,desert marigold,C3,abp,H,y,C3,p,f,p_f
+BAPE,Asteraceae,Bahia,pedata,,bluntscale bahia,,a,H,y,C3,a,f,a_f
+BAPL3,Asteraceae,Baileya,pleniradiata,,woolly desert marigold,C3,abp,H,y,C3,p,f,p_f
+BAPT,Asteraceae,Baccharis,pteronioides,,,,p,S,y,C3,p,s,p_s
+BASA4,Asteraceae,Baccharis,salicifolia,,mule fat,,p,S,y,C3,p,s,p_s
+BEER,Apiaceae,Berula,erecta,,cutleaf waterparsnip,,p,H,y,C3,p,f,p_f
+BELY,Asteraceae,Berlandiera,lyrata,,lyreleaf greeneyes,C3,p,H,y,C3,p,f,p_f
+BICE,Asteraceae,Bidens,cernua,,nodding beggartick,,a,H,y,C3,a,f,a_f
+BIFR,Asteraceae,Bidens,frondosa,,devil's beggartick,C3,a,H,y,C3,a,f,a_f
+BOAR,Poaceae,Bouteloua,aristidoides,,needle grama,C4,a,G,y,C4,a,g,a_g
+BOBA2,Poaceae,Bouteloua,barbata,,sixweeks grama,C4,a,G,y,C4,a,g,a_g
+BOCU,Poaceae,Bouteloua,curtipendula,,sideoats grama,C4,p,G,y,C4,p,g,p_g
+BOER,Nyctaginaceae,Boerhavia,erecta,,erect spiderling,C4,ap,H,y,C4,p,f,p_f
+BOER4,Poaceae,Bouteloua,eriopoda,,black grama,C4,p,G,y,C4,p,g,p_g
+BOGR2,Poaceae,Bouteloua,gracilis,,blue grama,C4,p,G,y,C4,p,g,p_g
+BOHI2,Poaceae,Bouteloua,hirsuta,,hairy grama,C4,p,G,y,C4,p,g,p_g
+BOIN,Nyctaginaceae,Boerhavia,intermedia,,fivewing spiderling,C4,a,H,y,C4,a,f,a_f
+BOLAT,Poaceae,Bothriochloa,laguroides,var. torreyana,silver beardgrass,,p,G,y,NA,p,g,p_g
+BOPU,Nyctaginaceae,Boerhavia,purpurascens,,purple spiderling,,a,H,y,C4,a,f,a_f
+BOSA,Poaceae,Bothriochloa,saccharoides,,silver bluestem,,p,G,y,C4,p,g,p_g
+BOSP,Nyctaginaceae,Boerhavia,spicata,,creeping spiderling,C4,a,H,y,C4,a,f,a_f
+BOSP3,Poaceae,Bothriochloa,springfieldii,,Springfield's beardgrass,,p,G,y,NA,p,g,p_g
+BOWR2,Poaceae,Bothriochloa,wrightii,,Wright's beardgrass,,p,G,y,NA,p,g,p_g
+BRBR2,Asteraceae,Brickellia,brachyphylla,,plumed brickellbush,,p,ss/H,y,C3,p,f,p_f
+BRCA3,Asteraceae,Brickellia,californica,,California brickellbush,C3,p,S/ss,y,C3,p,s,p_s
+BREU,Asteraceae,Brickellia,eupatorioides,,false boneset,,p,H/ss,y,NA,p,f,p_f
+BREUC2,Asteraceae,Brickellia,eupatorioides,var. chlorolepis,ragged marsh-elder,,p,H/ss,y,C3,p,f,p_f
+BREUE,Asteraceae,Brickellia,eupatorioides,var. eupatorioides,false boneset,,p,H/ss,y,NA,p,f,p_f
+CADR6,Fabaceae,Hoffmannseggia,drepanocarpa,,sicklepod holdback,,p,ss/H,y,C3,p,f,p_f
+CAHAF2,Onagraceae,Calylophus,hartwegii,var. filifolius,Hartweg's subdrops,,p,ss/H,y,C3,p,f,p_f
+CAIN14,Scrophulariaceae,Castilleja,integra,,wholeleaf Indian paintbrush,,p,ss/H/rp,y,C3,p,f,p_f
+CALI2,Acanthaceae,Carlowrightia,linearifolia,,heath wrightwort,C3,p,ss/H,y,C3,p,f,p_f
+CAMI13,Scrophulariaceae,Castilleja,minor,,lesser Indian paintbrush,,ap,ss/H/rp,y,C3,p,f,p_f
+CAPA47,Solanaceae,Calibrachoa,parviflora,,seaside petunia,,a,H,y,C3,a,f,a_f
+CAWR,Asteraceae,Calycoseris,wrightii,,white tackstem,,a,H,y,NA,a,f,a_f
+CEAR12,Gentianaceae,Centaurium,arizonicum,,Arizona centaury,,ab,H,y,C3,a,f,a_f
+CELAR,Ulmaceae,Celtis,laevigata,var. reticulata,netleaf hackberry,,p,T/S,y,C3,p,t,p_t
+CEMO2,Rosaceae,Cercocarpus,montanus,,alderleaf mountain mahogany,C3,p,T/S,y,C3,p,t,p_t
+CESI,Loasaceae,Cevallia,sinuata,,stinging serpent,,p,ss/H,y,C3,p,f,p_f
+CHAL11,Euphorbiaceae,Chamaesyce,albomarginata,,whitemargin sandmat,C4,p,H,y,C4,p,f,p_f
+CHBA11,Asteraceae,Chrysothamnus,baileyi,,Bailey's rabbitbrush,,p,S/ss,y,NA,p,s,p_s
+CHCHC3,Euphorbiaceae,Chamaesyce,chaetocalyx,var. chaetocalyx,bristlecup sandmat,C4,p,ss/H,y,C4,p,f,p_f
+CHCO,Solanaceae,Chamaesaracha,coniodes,,gray five eyes,,p,H,y,C3,p,f,p_f
+CHCO2,Solanaceae,Chamaesaracha,coronopus,,greenleaf five eyes,C3,p,H,y,C3,p,f,p_f
+CHER2,Asteraceae,Chaetopappa,ericoides,,rose heath,C3,p,ss/H,y,C3,p,f,p_f
+CHFE,Pteridaceae,Cheilanthes,feei,,slender lipfern,,p,H,y,C3,p,f,p_f
+CHFE3,Euphorbiaceae,Chamaesyce,fendleri,,Fendler's sandmat,C4,p,ss/H,y,C4,p,f,p_f
+CHFR3,Chenopodiaceae,Chenopodium,fremontii,,Fremont's goosefoot,C3,a,H,y,C3,a,f,a_f
+CHGE2,Euphorbiaceae,Chamaesyce,geyeri,,Geyer's sandmat,C4,a,H,y,C4,a,f,a_f
+CHGL13,Euphorbiaceae,Chamaesyce,glyptosperma,,ribseed sandmat ,,a,H,y,C4,a,f,a_f
+CHGR2,Chenopodiaceae,Chenopodium,graveolens,,fetid goosefoot,C3,a,H,y,C3,a,f,a_f
+CHIN2,Chenopodiaceae,Chenopodium,incanum,,mealy goosefoot,C3,a,H,y,C3,a,f,a_f
+CHLA10,Euphorbiaceae,Chamaesyce,lata,,hoary sandmat,na,p,H,y,C4,p,f,p_f
+CHLI2,Bignoniaceae,Chilopsis,linearis,,desert willow,C3,p,T/S,y,C3,p,t,p_t
+CHLIA,Bignoniaceae,Chilopsis,linearis,subsp. arcuata,desert willow,C3,p,T/S,y,C3,p,t,p_t
+CHMI7,Euphorbiaceae,Chamaesyce,micromera,,Sonoran sandmat,C4,a,H,y,C4,a,f,a_f
+CHMI8,Euphorbiaceae,Chamaesyce,missurica,,prairie sandmat,,a,H,y,C4,a,f,a_f
+CHPA28,Euphorbiaceae,Chamaesyce,parryi,,Parry's sandmat,,a,H,y,NA,a,f,a_f
+CHPR6,Euphorbiaceae,Chamaesyce,prostrata,,prostrate sandmat,,ap,H,y,NA,p,f,p_f
+CHRE4,Euphorbiaceae,Chamaesyce,revoluta,,threadstem sandmat,,a,H,y,C4,a,f,a_f
+CHSE7,Euphorbiaceae,Chamaesyce,serrula,,sawtooth sandmat,C4,a,H,y,C4,a,f,a_f
+CHSE8,Euphorbiaceae,Chamaesyce,setiloba,,Yuma sandmat,,a,H,y,NA,a,f,a_f
+CHSES,Euphorbiaceae,Chamaesyce,serpyllifolia,subsp. serpyllifolia,thymeleaf sandmat,C4,a,H,y,C4,a,f,a_f
+CHSO,Solanaceae,Chamaesaracha,sordida,,hairy five eyes,C3,p,H,y,C3,p,f,p_f
+CHSP11,Asteraceae,Chloracantha,spinosa,,spiny choracantha,C3,p,H,y,C3,p,f,p_f
+CHST8,Euphorbiaceae,Chamaesyce,stictospora,,slimseed sandmat,,a,H,y,C4,a,f,a_f
+CHVI4,Poaceae,Chloris,virgata,,feather fingergrass,C4,a,G,y,C4,a,g,a_g
+CHWO,Pteridaceae,Cheilanthes,wootonii,,beaded lipfern,,p,H,y,C3,p,f,p_f
+CICA11,Asteraceae,Cirsium,canescens,,prairie thistle,,b,H,y,NA,a,f,a_f
+CINE,Asteraceae,Cirsium,neomexicanum,,New Mexico thistle,C3,bp,H,y,C3,p,f,p_f
+CIOC2,Asteraceae,Cirsium,ochrocentrum,,yellowspine thistle,C3,bp,H,y,C3,p,f,p_f
+CIUN,Asteraceae,Cirsium,undulatum,,wavyleaf thistle,C3,bp,H,y,NA,p,f,p_f
+CLLI2,Ranunculaceae,Clematis,ligusticifolia,,western white clematis,,p,V,y,C3,p,s,p_s
+CLSE,Capparaceae,Cleome,serrulata,,Rocky Mountain beeplant,,a ,H,y,C3,a,f,a_f
+COAU2,Fumariaceae,Corydalis,aurea,,scrambled eggs,C3,ab ,H,y,C3,a,f,a_f
+COEQ,Convolvulaceae,Convolvulus,equitans,,Texas bindweed,C3,ap,V/H,y,C3,p,f,p_f
+COERA,Commelinaceae,Commelina,erecta,var. angustifolia,whitemouth dayflower,,p,H,y,C3,p,f,p_f
+COWR2,Scrophulariaceae,Cordylanthus,wrightii,,Wright's bird's beak,,a,H,y,C3,a,f,a_f
+CRCI3,Boraginaceae,Cryptantha,cinerea,,James' cryptantha,C3,p,ss/H,y,NA,p,f,p_f
+CRCIC,Boraginaceae,Cryptantha,cinerea,var. cinerea,James' cryptantha,C3,p,ss/H,y,C3,p,f,p_f
+CRCIJ,Boraginaceae,Cryptantha,cinerea,var. jamesii,James' cryptantha,C3,p,ss/H,y,C3,p,f,p_f
+CRCIL,Boraginaceae,Cryptantha,cinerea,var. laxa,James' cryptantha,C3,p,ss/H,y,C3,p,f,p_f
+CRCR3,Boraginaceae,Cryptantha,crassisepala,,thicksepal cryptantha,C3,a,H,y,C3,a,f,a_f
+CRCRE,Boraginaceae,Cryptantha,crassisepala,var. elachantha,thicksepal cryptantha,C3,a,H,y,C3,a,f,a_f
+CREO,Zygophyllaceae,Larrea,tridentata,,creosote bush,C3,p,S,y,C3,p,s,p_s
+CRFU,Boraginaceae,Cryptantha,fulvocanescens,,tawny cryptantha,C3,p,ss/H,y,NA,p,f,p_f
+CROB,Boraginaceae,Cryptantha,oblata,,rough cryptantha,C3,p,ss/H,y,NA,p,f,p_f
+CRPA8,Boraginaceae,Cryptantha,paysonii,,Payson's cryptantha,C3,p,ss/H,y,NA,p,f,p_f
+CRTE4,Euphorbiaceae,Croton,texensis,,Texas croton,,a,H,y,C3,a,f,a_f
+CRTR5,Convolvulaceae,Cressa,truxillensis,,spreading alkaliweed,,p,ss/H,y,C3,p,f,p_f
+CUFO,Cucurbitaceae,Cucurbita,foetidissima,,Missouri gourd,C3,p,V/H,y,C3,p,f,p_f
+CYACF,Apiaceae,Cymopterus,acaulis,var. fendleri,Fendler's springparsley,,p,H,y,C3,p,f,p_f
+CYAT,Chenopodiaceae,Cycloloma,atriplicifolium,,winged pigweed,C3,a,H,y,C3,a,f,a_f
+CYES,Cyperaceae,Cyperus,esculentus,,yellow nutsedge,C4,p,G,y,C4,p,g,p_g
+CYIM2,Cactaceae,Cylindropuntia,imbricata,,tree cholla,CAM,p,T/S/su,y,CAM,p,s,p_s
+CYIMI,Cactaceae,Cylindropuntia,imbricata,var. imbricata,tree cholla,CAM,p,T/S/su,y,CAM,p,s,p_s
+CYLE8,Cactaceae,Cylindropuntia,leptocaulis,,Christmas cactus,CAM,p,S/su,y,CAM,p,s,p_s
+CYMO,Apiaceae,Cymopterus,montanus,,mountain springparsley,,p,H,y,C3,p,f,p_f
+CYOD,Cyperaceae,Cyperus,odoratus,,fragrant flatsedge,,ap,G,y,C4,p,g,p_g
+DABR,Fabaceae,Dalea,brachystachya,,,,ab,H,y,C3,a,f,a_f
+DACA7,Fabaceae,Dalea,candida,,white prairie clover,,p,ss/H,y,C3,p,f,p_f
+DACAC,Fabaceae,Dalea,candida,var. candida,white prairie clover,,p,ss/H,y,C3,p,f,p_f
+DACAO,Fabaceae,Dalea,candida,var. oligophylla,white prairie clover,C3,p,ss/H,y,C3,p,f,p_f
+DACY,Fabaceae,Dalea,cylindriceps,,Andean prairie clover,,p,H,y,C3,p,f,p_f
+DAFO,Fabaceae,Dalea,formosa,,featherplume,C3,p,S/ss,y,C3,p,s,p_s
+DAJA,Fabaceae,Dalea,jamesii,,James' prairie clover,,p,ss/H,y,C3,p,f,p_f
+DALA3,Fabaceae,Dalea,lanata,,woolly prairie clover,,p,H,y,C3,p,f,p_f
+DALAT,Fabaceae,Dalea,lanata,var. terminalis,woolly prairie clover,,p,H,y,C3,p,f,p_f
+DALE3,Fabaceae,Dalea,leporina,,foxtail prairie clover,,a,H,y,C3,a,f,a_f
+DALEA,Fabaceae,Dalea,sp.,,,,ab,H,y,C3,a,f,a_f
+DANA,Fabaceae,Dalea,nana,,dwarf prairie clover,,p,H,y,C3,p,f,p_f
+DANAN,Fabaceae,Dalea,nana,var. nana,dwarf prairie clover,,p,H,y,C3,p,f,p_f
+DANE,Fabaceae,Dalea,neomexicana,,downy prairie clover,,p,H,y,C3,p,f,p_f
+DAPU7,Poaceae,Dasyochloa,pulchella,,low woolygrass,C4,p,G,y,C4,p,g,p_g
+DAPUP,Fabaceae,Dalea,purpurea,var. purpurea,purple prairie clover,C3,p,ss/H,y,C3,p,f,p_f
+DASC4,Fabaceae,Dalea,scariosa,,Albuquerque prairie clover,,p,H,y,C3,p,f,p_f
+DAWR,Fabaceae,Dalea,wrightii,,Wright's prairie clover,,p,H,y,C3,p,f,p_f
+DECAV2,Ranunculaceae,Delphinium,carolinianum,var. virescens,Carolina larkspur,C3,p,H,y,C3,p,f,p_f
+DEOB,Brassicaceae,Descurainia,obtusa,,blunt tansymustard,,ap,H,y,C3,p,f,p_f
+DEPI,Brassicaceae,Descurainia,pinnata,,western tansymustard,C3,abp,H,y,C3,p,f,p_f
+DEPIH,Brassicaceae,Descurainia,pinnata,var. halictorum,western tansymustard,C3,abp,H,y,C3,p,f,p_f
+DEWO,Ranunculaceae,Delphinium,wootonii,,Organ Mountain larkspur,,p,H,y,C3,p,f,p_f
+DISP,Poaceae,Distichlis,spicata,,saltgrass,C4,p,G,y,C4,p,g,p_g
+DIWI2,Brassicaceae,Dimorphocarpa,wislizeni,,touristplant,C3,a,H,y,C3,a,f,a_f
+DRCUC,Brassicaceae,Draba,cuneifolia,var. cuneifolia,wedgeleaf draba,C3,a,H,y,C3,a,f,a_f
+DRGL5,Caryophyllaceae,Drymaria,glandulosa,,Fendler's drymary,,a,H,y,C3,a,f,a_f
+DYPA,Asteraceae,Dyssodia,papposa,,fetid marigold,,a,H,y,C3,a,f,a_f
+ECCOC,Cactaceae,Echinocereus,coccineus,var. coccineus,scarlet hedgehog cactus,CAM,p,S/su,y,CAM,p,s,p_s
+ECCR,Poaceae,Echinochloa,crus-galli,,barnyardgrass,C4,a,G,y,C4,a,g,a_g
+ECCRM,Poaceae,Echinochloa,crus-pavonis,var. macera,gulf cockspur grass,C4,a,G,y,C4,a,g,a_g
+ECFE,Cactaceae,Echinocereus,fendleri,,pinkflower hedgehog cactus,CAM,p,S/su,y,CAM,p,s,p_s
+ECFEF3,Cactaceae,Echinocereus,fendleri,subsp. fendleri,pinkflower hedgehog cactus,CAM,p,S/su,y,CAM,p,s,p_s
+ECIN2,Cactaceae,Ecinomastus,intertextus,,white fishhook cactus,CAM,p,S/su,y,CAM,p,s,p_s
+ECPR,Asteraceae,Eclipta,prostrata,,false daisy,,ap,H,y,C3,p,f,p_f
+ECVI2,Cactaceae,Echinocereus,viridiflorus,,nylon hedgehog cactus,CAM,p,S/su,y,CAM,p,s,p_s
+ELAN,Elaeagnaceae,Elaeagnus,angustifolia,,Russian olive,C3,p,T/S,y,C3,p,t,p_t
+ELEL5,Poaceae,Elymus,elymoides,,squirreltail,,p,G,y,C3,p,g,p_g
+ELPA3,Cyperaceae,Eleocharis,palustris,,common spikerush,C3,p,G,y,C3,p,g,p_g
+ELPA4,Cyperaceae,Eleocharis,parishii,,Parish's spikerush,,p,G,y,NA,p,g,p_g
+ENDE,Poaceae,Enneapogon,desvauxii,,nineawn pappusgrass,C4,p,G,y,C4,p,g,p_g
+EPCI,Onagraceae,Epilobium,ciliatum,,fringed willowherb,C3,p,H,y,C3,p,f,p_f
+EPTO,Ephedraceae,Ephedra,torreyana,,Torrey's jointfir,C3,p,ss/S,y,C3,p,s,p_s
+EPVI,Ephedraceae,Ephedra,viridis,,mormon tea,,p,S,y,C3,p,s,p_s
+EPWI2,Scrophulariaceae,Epixiphium,wislizeni,,ballonbush,,p,V/H,y,C3,p,f,p_f
+EQLA,Equisetaceae,Equisetum,laevigatum,,smooth horsetail,C3,p,H,y,C3,p,f,p_f
+ERAB2,Polygonaceae,Eriogonum,abertianum,,Abert's buckwheat,C3,a,H,y,C3,a,f,a_f
+ERAN4,Polygonaceae,Eriogonum,annuum,,annual buckwheat,,ab ,H,y,C3,a,f,a_f
+ERAS2,Brassicaceae,Erysimum,asperum,,western wallflower,,bp,H,y,C3,p,f,p_f
+ERBEB,Asteraceae,Erigeron,bellidiastrum,var. bellidiastrum,western daisy fleabane,C3,a,H,y,C3,a,f,a_f
+ERCA14,Brassicaceae,Erysimum,capitatum,,sanddune wallflower,,bp,H,y,C3,p,f,p_f
+ERCE2,Polygonaceae,Eriogonum,cernuum,,nodding buckwheat,,a,H,y,C3,a,f,a_f
+ERCO28,Asteraceae,Erigeron,colomexicanus,,running fleabane,,b,H,y,NA,a,f,a_f
+ERDI2,Polemoniaceae,Eriastrum,diffusum,,miniature woollystar,,a,H,y,C3,a,f,a_f
+ERDI4,Asteraceae,Erigeron,divergens,,spreading fleabane,C3,bp,H,y,C3,p,f,p_f
+EREF,Polygonaceae,Eriogonum,effusum,,spreading buckwheat,,p,S/ss,y,C3,p,s,p_s
+ERFL,Asteraceae,Erigeron,flagellaris,,trailing fleabane,C3,b,H,y,C3,a,f,a_f
+ERHA,Polygonaceae,Eriogonum,havardii,,Harvard's buckwheat,,p,H,y,C3,p,f,p_f
+ERIN,Poaceae,Eragrostis,intermedia,,plains lovegrass,C4,p,G,y,C4,p,g,p_g
+ERIN7,Brassicaceae,Erysimum,inconspicuum,,shy wallflower,,bp,H,y,C3,p,f,p_f
+ERJA,Polygonaceae,Eriogonum,jamesii,,James' buckwheat,C3,p,ss/H,y,C3,p,f,p_f
+ERJAJ,Polygonaceae,Eriogonum,jamesii,var. jamesii,James' buckwheat,C3,p,ss/H,y,C3,p,f,p_f
+ERLE10,Polygonaceae,Eriogonum,leptophyllum,,slenderleaf buckwheat,,p,ss/H,y,C3,p,f,p_f
+ERME,Poaceae,Eragrostis,mexicana,,Mexican lovegrass,C4,a,G,y,C4,a,g,a_g
+ERNAN3,Asteraceae,Ericameria,nauseosa,subsp. nauseosa ,rubber rabbitbrush,,p,S/ss,y,NA,p,s,p_s
+ERPE,Poaceae,Eragrostis,pectinacea,,tufted lovegrass,,ap,G,y,C4,p,g,p_g
+ERPI5,Poaceae,Erioneuron,pilosum,,hairy woollygrass,C4,p,G,y,C4,p,g,p_g
+ERPO4,Polygonaceae,Eriogonum,polycladon,,sorrel buckwheat,,a,H,y,C3,a,f,a_f
+ERRO2,Polygonaceae,Eriogonum,rotundifolium,,roundleaf buckwheat,C3,a,H,y,C3,a,f,a_f
+ERTE13,Geraniaceae,Erodium,texanum,,Texas storks bill,,ab,H,y,C3,a,f,a_f
+ERWR,Polygonaceae,Eriogonum,wrightii,,bastardsage,C3,p,S/ss/H,y,C3,p,s,p_s
+ESVIV,Cactaceae,Escobaria,vivipara ,,spinystar,CAM,p,S/su,y,CAM,p,s,p_s
+EUEX4,Euphorbiaceae,Euphorbia,exstipulata,,squareseed spurge,,a,H,y,C3,a,f,a_f
+EVNU,Convolvulaceae,Evolvulus,nuttallianus,,shaggy dwarf morning-glory,C3,p,ss/H,y,C3,p,f,p_f
+FAPA,Rosaceae,Fallugia,paradoxa,,Apache plume,C3,p,S,y,C3,p,s,p_s
+FEAR2,Poaceae,Festuca,arizonica,,Arizona fescue,C3,p,G,y,C3,p,g,p_g
+FECA6,Poaceae,Festuca,calligera,,southwest fescue,,p,G,y,C3,p,g,p_g
+FERU,Hydrangeaceae,Fendlera,rupicola,,cliff fendlerbush,,p,S,y,C3,p,s,p_s
+FLCA,Asteraceae,Flaveria,campestris,,alkali yellowtops ,,a,H,y,C4,a,f,a_f
+FOSP2,Fouquieriaceae,Fouquieria,splendens,,ocotillo,C3,p,S,y,C3,p,s,p_s
+FRJA,Frankeniaceae,Frankenia,jamesii,,James' seaheath,,p,S/ss,y,C3,p,s,p_s
+FRVE2,Oleaceae,Fraxinus,velutina,,velvet ash,C3,p,T,y,C3,p,t,p_t
+FUCR,Asclepiadaceae,Funastrum,crispum,,,,p,V/H,y,C3,p,f,p_f
+FUCYH,Asclepiadaceae,Funastrum,cynanchoides,subsp. heterophyllum,Hartweg's twinevine,,p,H,y,C3,p,f,p_f
+GACO5,Onagraceae,Gaura,coccinea,,scarlet beeblossom,,p,ss/H,y,C3,p,f,p_f
+GAPI,Asteraceae,Gaillardia,pinnatifida,,red dome blanketflower,,p,ss/H,y,C3,p,f,p_f
+GAPU,Asteraceae,Gaillardia,pulchella,,firewheel,,abp,ss/H,y,C3,p,f,p_f
+GAPUP2,Asteraceae,Gaillardia,pulchella,var. pulchella,Indian blanket,,abp,ss/H,y,NA,p,f,p_f
+GASUN,Onagraceae,Gaura,suffulta,subsp. nealleyi,Nealley's kisses,,a,H,y,C3,a,f,a_f
+GATR2,Rubiaceae,Galium,trifidum,,threepetal bedstraw,,p,V/H,y,NA,p,f,p_f
+GAWR3,Garryaceae,Garrya,wrightii,,Wright's silktassel,C3,p,T/S,y,C3,p,t,p_t
+GIFL,Polemoniaceae,Gilia,flavocincta,,lesser yellowthroat gilia,C3,a,H,y,C3,a,f,a_f
+GIME,Polemoniaceae,Gilia,mexicana,,El Paso gilia,,a,H,y,C3,a,f,a_f
+GIRI3,Polemoniaceae,Giliastrum,rigidula,,bluebowls,,ap,ss/H,y,C3,p,f,p_f
+GISI,Polemoniaceae,Gilia,sinuata,,rosy gilia,,a,H,y,C3,a,f,a_f
+GLBI2,Verbenaceae,Glandularia,bipinnatifida,,Dakota mock vervain,,ap,H,y,C3,p,f,p_f
+GLBIB,Verbenaceae,Glandularia,bipinnatifida,var. bipinnatifida,Dakota mock vervain,,ap,H,y,C3,p,f,p_f
+GLBIC,Verbenaceae,Glandularia,bipinnatifida,var. ciliata,Davis Mountina mock vervain,,ap,H,y,C3,p,f,p_f
+GLLE3,Fabaceae,Glycyrrhiza,lepidota,,American licorice,,p,H,y,C3,p,f,p_f
+GLSP,Crossosomataceae,Glossopetalon,spinescens,,spiny greasebush,,p,S/ss,y,NA,p,s,p_s
+GLWR,Verbenaceae,Glandularia,bipinnatifida,var. ciliata,Davis Moutnain mock vervain,,ap,H,y,C3,p,f,p_f
+GRCL,Cactaceae,Grusonia,clavata,,club cholla,CAM,p,S/su,y,CAM,p,s,p_s
+GRNUA,Asteraceae,Grindelia,nuda,var. aphanactis,curlytop gumweed,,abp,H,y,C3,p,f,p_f
+GRNUN,Asteraceae,Grindelia,nuda,var. nuda,curlytop gumweed,,abp,H,y,NA,p,f,p_f
+GUSA2,Asteraceae,Gutierrezia,sarothrae,,broom snakeweed,C3,p,S/ss/H,y,C3,p,s,p_s
+GUSP,Asteraceae,Gutierrezia,sphaerocephala,,roundleaf snakeweed,C3,ap,ss/H,y,NA,p,f,p_f
+GUTEG,Asteraceae,Gutierrezia,texana,var. glutinosa,sticky snakeweed,C3,ap,ss/H,y,C3,p,f,p_f
+GUWR,Asteraceae,Gutierrezia,wrightii,,Wright's snakeweed,C3,p,ss/H,y,C3,p,f,p_f
+HAPI2,Boraginaceae,Hackelia,pinetorum,,Livermore stickseed,,bp,H,y,C3,p,f,p_f
+HEAN3,Asteraceae,Helianthus,annuus,,common sunflower,C3,a,H,y,C3,a,f,a_f
+HECI,Asteraceae,Helianthus,ciliaris,,Texas blueweed,C3,p,H,y,C3,p,f,p_f
+HECO5,Boraginaceae,Heliotropium,convolvulaceum,,phlox heliotrope,,a,H,y,C3-C4,a,f,a_f
+HECU3,Boraginaceae,Heliotropium,curassavicum,,salt heliotrope,,ap,ss/H,y,NA,p,f,p_f
+HECUC2,Boraginaceae,Heliotropium,curassavicum,var. curassavicum,salt heliotrope,,ap,ss/H,y,C3,p,f,p_f
+HEDR,Lamiaceae,Hedeoma,drummondii,,Drummond's false pennyroyal,,abp,H,y,C3,p,f,p_f
+HEFUF,Asteraceae,Heterotheca,fulcrata,var. fulcrata,rockyscree false goldenaster,,p,ss/H,y,NA,p,f,p_f
+HEMUN,Asteraceae,Heliomeris,multiflora,var. nevadensis,Nevada goldeneye,C3,p,H,y,NA,p,f,p_f
+HENA,Lamiaceae,Hedeoma,nana,,dwarf false pennyroyal,,ap,H,y,C3,p,f,p_f
+HENE5,Poaceae,Hesperostipa,neomexicana,,New Mexico feathergrass,,p,G,y,C3,p,g,p_g
+HENIC,Asteraceae,Helianthus,niveus,subsp. canescens,showy sunflower,C3,ap,ss/H,y,NA,p,f,p_f
+HEOB,Lamiaceae,Hedeoma,oblongifolia,,oblongleaf false pennyroyal,,p,H,y,C3,p,f,p_f
+HEPE,Asteraceae,Helianthus,petiolaris,,prairie sunflower,C3,a,H,y,NA,a,f,a_f
+HEPEF,Asteraceae,Helianthus,petiolaris,subsp. fallax,prairie sunflower,C3,a,H,y,C3,a,f,a_f
+HEPEP,Asteraceae,Helianthus,petiolaris,subsp. petiolaris,prairie sunflower,C3,a,H,y,C3,a,f,a_f
+HEPI2,Asteraceae,Heterosperma,pinnatum,,wingpetal,,a,H,y,NA,a,f,a_f
+HERUR2,Saxifragaceae,Heuchera,rubescens,var. rubescens,pink alumroot,,p,H,y,C3,p,f,p_f
+HEVI4,Asteraceae,Heterotheca,villosa,,hairy false goldenaster,C3,p,ss/H,y,NA,p,f,p_f
+HEVIM3,Asteraceae,Heterotheca,villosa,var. minor,hairy false goldenaster,C3,p,ss/H,y,NA,p,f,p_f
+HEVIV,Asteraceae,Heterotheca,villosa,var. villosa,hairy false goldenaster,C3,p,ss/H,y,C3,p,f,p_f
+HODR,Fabaceae,Hoffmannseggia,drepanocarpa,,sicklepod holdback,,p,ss/H,y,C3,p,f,p_f
+HOGL2,Fabaceae,Hoffmannseggia,glauca,,Indian rushpea,,p,ss/H,y,C3,p,f,p_f
+HOJU,Poaceae,Hordeum,jubatum,,foxtail barley,C3,p,G,y,C3,p,g,p_g
+HORU,Rubiaceae,Houstonia,rubra,,red bluet,,p,H,y,C3,p,f,p_f
+HYBR7,Asteraceae,Hymenoxys,brachyactis,,East View rubberweed,,p,H,y,NA,p,f,p_f
+HYFI,Asteraceae,Hymenopappus,filifolius,,fineleaf hymenopappus,,p,ss/H,y,NA,p,f,p_f
+HYFIC,Asteraceae,Hymenopappus,filifolius,var. cinereus,fineleaf hymenopappus,,p,ss/H,y,C3,p,f,p_f
+HYFL,Asteraceae,Hymenopappus,flavescens,,collegeflower,,b,H,y,NA,a,f,a_f
+HYFLC,Asteraceae,Hymenopappus,flavescens,var. canotomentosus,collegeflower,,b,H,y,C3,a,f,a_f
+HYFLF,Asteraceae,Hymenopappus,flavescens,var. flavescens,collegeflower,,b,H,y,NA,a,f,a_f
+HYMO,Asteraceae,Hymenoclea,monogyra,,singlewhorl burrobush,,p,S/ss,y,C3,p,s,p_s
+HYOD,Asteraceae,Hymenoxys,odorata,,bitter rubberweed,C3,a,H,y,C3,a,f,a_f
+HYRIF,Asteraceae,Hymenoxys,richardsonii,var. floribunda,Colorado rubberweed,,p,ss/H,y,C3,p,f,p_f
+HYVE,Violaceae,Hybanthus,verticillatus,,babyslippers,,p,H,y,C3,p,f,p_f
+HYVE2,Apiaceae,Hydrocotyle,verticillata,,whorled marshpennywort,,p,H,y,C3,p,f,p_f
+IPCO2,Convolvulaceae,Ipomoea,costellata,,crestrib morning-glory,,a,V/H,y,C3,a,f,a_f
+IPCR,Convolvulaceae,Ipomoea,cristulata,,Trans-Pecos morning-glory,,a,V/H,y,C3,a,f,a_f
+IPLA2,Polemoniaceae,Ipomopsis,laxiflora,,iron ipomopsis,,ab,H,y,C3,a,f,a_f
+IPLO2,Polemoniaceae,Ipomopsis,longiflora,,flaxflower ipomopsis,,ab,H,y,C3,a,f,a_f
+IPMU3,Polemoniaceae,Ipomopsis,multiflora,,manyflowered ipomopsis,,p,ss/H,y,C3,p,f,p_f
+IPPU4,Polemoniaceae,Ipomopsis,pumila,,dwarf ipomopsis,,a ,H,y,C3,a,f,a_f
+ISPL,Asteraceae,Isocoma,pluriflora,,southern goldenbush,,p,ss/H,y,C3,p,f,p_f
+JUME4,Juncaceae,Juncus,mexicanus,,Mexican rush,C3,p,G,y,C3,p,g,p_g
+JUMO,Cupressaceae,Juniperus,monosperma,,oneseed juniper,C3,p,T/ss,y,C3,p,s,p_s
+JUTO,Juncaceae,Juncus,torreyi,,Torrey's rush,C3,p,G,y,C3,p,g,p_g
+KAHI,Zygophyllaceae,Kallstroemia,hirsutissima,,,,a,H,y,C4,a,f,a_f
+KAPA,Zygophyllaceae,Kallstroemia,parviflora,,warty caltrop,C4,a,H,y,C4,a,f,a_f
+KOMA,Poaceae,Koeleria,macrantha,,prairie Junegrass,C4,p,G,y,C3,p,g,p_g
+KRLA,Krameriaceae,Krameria,lanceolata,,trailing krameria,C3,p,ss/H,y,C3,p,f,p_f
+KRLA2,Chenopodiaceae,Krascheninnikovia,lanata,,winterfat,C3,p,S/ss,y,C3,p,s,p_s
+LACO13,Asteraceae,Laennecia,coulteri,,Coulter's horseweed,,ab,H,y,C3,a,f,a_f
+LAOC3,Boraginaceae,Lappula,occidentalis,,flatspine stickseed,C3,ap,H,y,NA,p,f,p_f
+LAOCC,Boraginaceae,Lappula,occidentalis,var. cupulata,flatspine stickseed,C3,ab,H,y,C3,a,f,a_f
+LAOCO,Boraginaceae,Lappula,occidentalis,var. occidentalis,flatspine stickseed,C3,ab,H,y,C3,a,f,a_f
+LATR2,Zygophyllaceae,Larrea,tridentata,,creosote bush,C3,p,S,y,C3,p,s,p_s
+LEAL4,Brassicaceae,Lepidium,alyssoides,,mesa pepperweed,C3,bp,ss/H,y,C3,p,f,p_f
+LEALA4,Brassicaceae,Lepidium,alyssoides,var. angustifolium,mesa pepperweed,C3,bp,H,y,C3,p,f,p_f
+LEDE,Brassicaceae,Lepidium,densiflorum,,common pepperweed,C3,ab,H,y,C3,a,f,a_f
+LEDE23,Asteraceae,Leuciva,dealbata,,woolly marsh elder,,p,H,y,NA,p,f,p_f
+LEDU,Poaceae,Leptochloa,dubia,,mucronate sprangletop,C4,p,G,y,C4,p,g,p_g
+LEFE,Brassicaceae,Lesquerella,fendleri,,Fendler's bladderpod,C3,p,H,y,C3,p,f,p_f
+LEFUF,Poaceae,Leptochloa,fusca,subsp. fascicularis,bearded sprangletop,,a,G,y,NA,a,g,a_g
+LEGO,Brassicaceae,Lesquerella,gordonii,,Gordon's bladderpod,C3,abp,H,y,C3,p,f,p_f
+LELA,Brassicaceae,Lepidium,lasiocarpum,,shaggyfruit pepperweed,C3,ab,H,y,C3,a,f,a_f
+LEMO2,Brassicaceae,Lepidium,montanum,,mountain pepperweed,C3,bp,ss/H,y,C3,p,f,p_f
+LEOV,Brassicaceae,Lesquerella,ovalifolia ,,roundleaf bladderpod ,,p,H,y,C3,p,f,p_f
+LEPI3,Brassicaceae,Lesquerella,pinetorum,,White Mountain bladderpod,,p,H,y,C3,p,f,p_f
+LEVIM,Brassicaceae,Lepidium,virginicum,var. medium,intermediate pepperweed,C3,abp,H,y,C3,p,f,p_f
+LIAR3,Linaceae,Linum,aristatum,,bristle flax,,a,H,y,C3,a,f,a_f
+LIAU4,Linaceae,Linum,australe,,southern flax,,a,H,y,C3,a,f,a_f
+LIAUA,Linaceae,Linum,australe,var. australe,southern flax,,a,H,y,C3,a,f,a_f
+LICO7,Boraginaceae,Lithospermum,cobrense,,smooththroat stoneseed,C3,p,H,y,C3,p,f,p_f
+LIIN2,Boraginaceae,Lithospermum,incisum,,narrowleaf stoneseed,C3,p,H,y,C3,p,f,p_f
+LILI4,Plumbaginaceae,Limonium,limbatum,,Trans-Pecos sea lavender,,p,H,y,C3,p,f,p_f
+LIMU3,Boraginaceae,Lithospermum,multiflorum,,manyflowered stoneseed,C3,p,H,y,C3,p,f,p_f
+LIPU4,Linaceae,Linum,puberulum,,plains flax,,a,H,y,C3,a,f,a_f
+LISC5,Linaceae,Linum,schiedeanum,,Schied's flax,,p,H,y,C3,p,f,p_f
+LOCA2,Campanulaceae,Lobelia,cardinalis,,cardinalflower,C3,p,H,y,C3,p,f,p_f
+LOGR4,Fabaceae,Lotus,greenei,,Greene's bird's-foot trefoil,,p,H,y,C3,p,f,p_f
+LOPL2,Fabaceae,Lotus,plebeius,,New Mexico bird's-foot trefoil,,p,H,y,C3,p,f,p_f
+LOWR,Fabaceae,Lotus,wrightii,,Wright's deervetch,,p,H,y,C3,p,f,p_f
+LUBR2,Fabaceae,Lupinus,brevicaulis,,shortstem lupine,,a,H,y,C3,a,f,a_f
+LUKIA,Fabaceae,Lupinus,kingii,var. argillaceus,King's lupine,,a,H,y,C3,a,f,a_f
+LYAM,Lamiaceae,Lycopus,americanus,,American water horehound,C3,p,H,y,C3,p,f,p_f
+LYAS,Lamiaceae,Lycopus,asper,,rough bugleweed,C3,p,H,y,C3,p,f,p_f
+LYPA,Solanaceae,Lycium,pallidum,,pale desert thorn,,p,S,y,C3,p,s,p_s
+LYPH,Poaceae,Lycurus,phleoides,,common wolfstail,C4,p,G,y,C4,p,g,p_g
+LYTO,Solanaceae,Lycium,torreyi,,Torrey wolfberry,,p,S,y,C3,p,s,p_s
+MAAN9,Scrophulariaceae,Maurandella,antirrhiniflora,,roving sailor,,p,V/H,y,C3,p,f,p_f
+MABIB,Asteraceae,Machaeranthera,bigelovii,var. bigelovii,Bigelow's tansyaster,,bp,H,y,NA,p,f,p_f
+MACAC3,Asteraceae,Machaeranthera,canescens,subsp. canescens var. canescens,hoary tansyaster,,abp,H,y,NA,p,f,p_f
+MAFE,Asteraceae,Malacothrix,fendleri,,Fendler's desertdandelion,C3,a,H,y,C3,a,f,a_f
+MAGR10,Asteraceae,Machaeranthera,gracilis,,slender goldenweed,C3,a,H,y,C3,a,f,a_f
+MAHA4,Berberidaceae,Mahonia,haematocarpa,,red barberry,,p,S,y,C3,p,s,p_s
+MALE3,Malvaceae,Malvella,leprosa,,alkali mallow,,p,H,y,C3,p,f,p_f
+MAPIP,Asteraceae,Machaeranthera,pinnatifida,subsp. pinnatifida,lacy tansyaster,C3,p,ss/H,y,C3,p,f,p_f
+MARE11,Berberidaceae,Mahonia,repens,,creeping barberry,,p,S/ss,y,C3,p,s,p_s
+MATA2,Asteraceae,Machaeranthera,tanacetifolia,,tanseyleaf aster,C3,ab,H,y,C3,a,f,a_f
+MEAL6,Loasaceae,Mentzelia,albicaulis,,whitestem blazingstar,C3,a,H,y,C3,a,f,a_f
+MEAR4,Lamiaceae,Mentha,arvensis,,wild mint,,p,H,y,C3,p,f,p_f
+MEHU,Loasaceae,Mentzelia,humilis,,gypsum blazingstar,C3,ap,H,y,C3,p,f,p_f
+MELA,Loasaceae,Mentzelia,laciniata,,cutleaf blazingstar,,p,H,y,C3,p,f,p_f
+MELE2,Asteraceae,Melampodium,leucanthum,,plains blackfoot,C3,p,ss/H,y,C3,p,f,p_f
+MEMU3,Loasaceae,Mentzelia,multiflora,,Adonis blazingstar,,bp,H,y,C3,p,f,p_f
+MEMUM2,Loasaceae,Mentzelia,multiflora,var. multiflora,Adonis blazingstar,,bp,H,y,C3,p,f,p_f
+MEOF,Fabaceae,Melilotus,officinalis,,yellow sweetclover,C3,abp,H,y,C3,p,f,p_f
+MEOL,Loasaceae,Mentzelia,oligosperma,,chickenthief,,p,H,y,C3,p,f,p_f
+MEPE6,Loasaceae,Mentzelia,perennis,,perennial blazingstar,,p,H,y,C3,p,f,p_f
+MESC,Oleaceae,Menodora,scabra,,rough menodora,C3,p,ss/H,y,C3,p,f,p_f
+MIAL4,Nyctaginaceae,Mirabilis,albida,,white four o'clock,,p,ss/H,y,C3,p,f,p_f
+MIGL3,Nyctaginaceae,Mirabilis,glabra,,Smooth four o'clock,,p,H,y,C3,p,f,p_f
+MILI3,Nyctaginaceae,Mirabilis,linearis,,narrowleaf four o'clock,C3,p,H,y,C3,p,f,p_f
+MIMU,Nyctaginaceae,Mirabilis,multiflora,,Colorado four o'clock,C3,p,H,y,C3,p,f,p_f
+MIOB2,Caryophyllaceae,Minuartia,obtusiloba,,twinflower sandwort,,p,H,y,NA,p,f,p_f
+MIOX,Nyctaginaceae,Mirabilis,oxybaphoides,,smooth spreading four o'clock,C3,p,H,y,C3,p,f,p_f
+MIPU6,Nyctaginaceae,Mirabilis,pumila,,dwarf four o'clock,C3,p,H,y,C3,p,f,p_f
+MUAR,Poaceae,Muhlenbergia,arenacea,,ear muhly,C4,p,G,y,C4,p,g,p_g
+MUAR2,Poaceae,Muhlenbergia,arenicola,,sand muhly,,p,G,y,C4,p,g,p_g
+MUAS,Poaceae,Muhlenbergia,asperifolia,,Parodi scratchgrass,,p,G,y,C4,p,g,p_g
+MUFR,Poaceae,Muhlenbergia,fragilis,,delicate muhly,,a,G,y,C4,a,g,a_g
+MUMO,Poaceae,Muhlenbergia,montana,,mountain muhly,,p,G,y,C4,p,g,p_g
+MUPA2,Poaceae,Muhlenbergia,pauciflora,,New Mexico muhly,,p,G,y,C4,p,g,p_g
+MUPO2,Poaceae,Muhlenbergia,porteri,,bush muhly,C4,p,G,y,C4,p,g,p_g
+MURE,Poaceae,Muhlenbergia,repens,,creeping muhly,,p,G,y,C4,p,g,p_g
+MURI2,Poaceae,Muhlenbergia,rigens,,deergrass,,p,G,y,C4,p,g,p_g
+MUSE,Poaceae,Muhlenbergia,setifolia,,curlyleaf muhly,,p,G,y,C4,p,g,p_g
+MUSQ3,Poaceae,Munroa,squarrosa,,false buffalograss,,a,G,y,NA,a,g,a_g
+MUTE4,Poaceae,Muhlenbergia,tenuifolia,,slender muhly,,ap,G,y,C4,p,g,p_g
+MUTO2,Poaceae,Muhlenbergia,torreyi,,ring muhly,,p,G,y,C4,p,g,p_g
+NACA,Hydrophyllaceae,Nama,carnosum,,sand fiddleleaf,,p,ss/H/su,y,C3,p,f,p_f
+NADI,Hydrophyllaceae,Nama,dichotomum,,wishbone fiddleleaf,,a,H,y,C3,a,f,a_f
+NAHI,Hydrophyllaceae,Nama,hispidum,,bristly nama,C3,a,H,y,C3,a,f,a_f
+NECA3,Brassicaceae,Nerisyrenia,camporum,,bicolor fanmustard,,p,ss/H,y,C3,p,f,p_f
+NELI,Brassicaceae,Nerisyrenia,linearifolia,,White Sands fanmustard,,p,ss/H,y,C3,p,f,p_f
+NOMI,Liliaceae,Nolina,microcarpa,,sacahuista,,p,S/ss,y,C3,p,s,p_s
+NOST,Pteridaceae,Notholaena,standleyi,,star cloak fern,,P,H,y,C3,p,f,p_f
+OEAL,Onagraceae,Oenothera,albicaulis,,whitest evening primrose,C3,a,H,y,C3,a,f,a_f
+OECA10,Onagraceae,Oenothera,caespitosa,,tufted evening primrose,C3,p,ss/H,y,C3,p,f,p_f
+OECAC2,Onagraceae,Oenothera,caespitosa,subsp. caespitosa,tufted evening primrose,C3,p,ss/H,y,C3,p,f,p_f
+OECO2,Onagraceae,Oenothera,coronopifolia,,crownleaf evening primrose,C3,p,H,y,C3,p,f,p_f
+OEELH,Onagraceae,Oenothera,elata,subsp. hirsutissima,Hooker's evening primrose,C3,bp,H,y,C3,p,f,p_f
+OEPA,Onagraceae,Oenothera,pallida,,pale evening primrose,C3,bp,H,y,C3,p,f,p_f
+OEPAG,Onagraceae,Oenothera,pallida,subsp. gypsophila,whitepole evening primrose,C3,p,H,y,C3,p,f,p_f
+OEPAR,Onagraceae,Oenothera,pallida,subsp. runcinata,pale evening primrose,C3,p,H,y,C3,p,f,p_f
+OEPAT,Onagraceae,Oenothera,pallida,subsp. trichocalyx,pale evening primrose,C3,bp,H,y,C3,p,f,p_f
+OPEN3,Cactaceae,Opuntia,engelmannii,,cactus apple,CAM,p,S/su,y,CAM,p,s,p_s
+OPFR,Cactaceae,Opuntia,fragilis,,brittle pricklypear,CAM,p,S/su,y,CAM,p,s,p_s
+OPMA8,Cactaceae,Opuntia,macrocenta ,,purple pricklypear,CAM,p,T/S/su,y,CAM,p,s,p_s
+OPPH,Cactaceae,Opuntia,phaeacantha,,tulip pricklypear,CAM,p,S/su,y,CAM,p,s,p_s
+OPPO,Cactaceae,Opuntia,polyacantha,,plains pricklypear,CAM,p,S/su,y,CAM,p,s,p_s
+OPPOE,Cactaceae,Opuntia,polyacantha,var. erinacea,grizzlybear pricklypear,CAM,p,S/su,y,CAM,p,s,p_s
+OPPOP,Cactaceae,Opuntia,polyacantha,var. polyacantha,hairspine pricklypear,CAM,p,S/su,y,CAM,p,s,p_s
+OPUNT,Cactaceae,Opuntia,sp,,prickly pear cactus,CAM,p,S/su,y,CAM,p,s,p_s
+ORLUM,Orobanchaceae,Orobanche,ludoviciana,subsp. multiflora,manyflowered broomrape,,a,H/rp,y,C3,a,f,a_f
+OXVI,Oxalidaceae,Oxalis,violacea,,violet woodsorrel,C3,p,H,y,C3,p,f,p_f
+PACA6,Poaceae,Panicum,capillare,,witchgrass,C4,a,G,y,C4,a,g,a_g
+PACO11,Asteraceae,Parthenium,confertum,,Gray's feverfew,,abp,ss/H,y,NA,p,f,p_f
+PAFI4,Fabaceae,Parryella,filifolia,,common dunebroom,,p,S,y,C3,p,s,p_s
+PAHA,Poaceae,Panicum,hallii,,Hall's panicgrass,,p,G,y,C4,p,g,p_g
+PAIN2,Asteraceae,Parthenium,incanum,,mariola,C3,p,S,y,C3,p,s,p_s
+PAJA,Caryophyllaceae,Paronychia,jamesii,,James' nailwort,,p,ss/H,y,C3,p,f,p_f
+PAOB,Poaceae,Panicum,obtusum,,vine mesquite,C4,p,G,y,C4,p,g,p_g
+PAQU2,Vitaceae,Parthenocissus,quinquefolia,,Virginia creeper,C3,p,WV,y,C3,p,s,p_s
+PASM,Poaceae,Pascopyrum,smithii,,western wheatgrass,,p,G,y,C3,p,g,p_g
+PASP,Asteraceae,Palafoxia,sphacelata,,othake,,a,H,y,C3,a,f,a_f
+PEAM,Scrophulariaceae,Penstemon,ambiguus,,Gilia beardtongue,C3,p,H,y,C3,p,f,p_f
+PEAML2,Scrophulariaceae,Penstemon,ambiguus,var. laevissimus,pink plains beardtongue,C3,p,ss/H,y,C3,p,f,p_f
+PEAN,Asteraceae,Pectis,angustifolia,,lemonscent,C4,a,H,y,C4,a,f,a_f
+PEBA2,Scrophulariaceae,Penstemon,barbatus,,beardlip penstemon,C3,p,H,y,C3,p,f,p_f
+PEBAT,Scrophulariaceae,Penstemon,barbatus,var. torreyi,Torrey's penstemon,C3,p,H,y,C3,p,f,p_f
+PECA10,Asteraceae,Pericome,caudata,,mountian tail-leaf,,p,H,y,C3,p,f,p_f
+PECA12,Rosaceae,Petrophyton,caespitosum,,mat rockspirea,,p,ss/H,y,C3,p,f,p_f
+PEFE,Scrophulariaceae,Penstemon,fendleri,,Fendler's penstemon,C3,p,H,y,C3,p,f,p_f
+PEHY4,Fabaceae,Pediomelum,hypogaeum,,subterranean Indian breadroot,,p,H,y,C3,p,f,p_f
+PEJA,Scrophulariaceae,Penstemon,jamesii,,James' beardtongue,C3,p,ss/H,y,C3,p,f,p_f
+PEOP,Scrophulariaceae,Penstemon,ophianthus,,coiled anther penstemon,,p,H,y,C3,p,f,p_f
+PEVI4,Scrophulariaceae,Penstemon,virgatus,,upright blue beardtongue,C3,p,H,y,C3,p,f,p_f
+PHACE,Hydrophyllaceae,Phacelia,sp.,,,,abp,H,y,C3,p,f,p_f
+PHAN3,Fabaceae,Phaseolus,angustissimus,,slimleaf bean,,p,V/H,y,C3,p,f,p_f
+PHCO,Hydrophyllaceae,Phacelia,coerulea,,skyblue phacelia,,a,H,y,C3,a,f,a_f
+PHCR,Hydrophyllaceae,Phacelia,crenulata,var. corrugata,cleafleaf wildheliotrope,,a,H,y,C3,a,f,a_f
+PHHE4,Solanaceae,Physalis,hederifolia,,ivyleaf groundcherry,C3,p,ss/H,y,C3,p,f,p_f
+PHHEF,Solanaceae,Physalis,hederifolia,var. fendleri,Fendler's groundcherry,C3,p,ss/H,y,C3,p,f,p_f
+PHHEH2,Solanaceae,Physalis,hederifolia,var. hederifolia,ivyleaf groundcherry,C3,p,ss/H,y,C3,p,f,p_f
+PHIN,Hydrophyllaceae,Phacelia,integrifolia,,gypsum phacelia,,abp,H,y,C3,p,f,p_f
+PHINI5,Hydrophyllaceae,Phacelia,integrifolia,var. integrifolia,gypsum phacelia,,abp,H,y,C3,p,f,p_f
+PHJU,Viscaceae,Phoradendron,juniperinum,,juniper mistletoe,,p,S/ss/sp,y,C3,p,s,p_s
+PHLO15,Portulacaceae,Phemeranthus,longipes,,pink fameflower,,p,H,y,NA,p,f,p_f
+PHLOL3,Solanaceae,Physalis,longifolia,var. longifolia,longleaf groundcherry,C3,p,H,y,C3,p,f,p_f
+PHPA29,Portulacaceae,Phemeranthus,parviflorus,,sunbright,C3,p,ss/H,y,NA,p,f,p_f
+PIED,Pinaceae,Pinus,edulis,,twoneedle pinyon,C3,p,T,y,C3,p,t,p_t
+PLJA,Poaceae,Pleuraphis,jamesii,,James' galleta,,p,G,y,C4,p,g,p_g
+PLMA2,Plantaginaceae,Plantago,major,,common plaintain,,p,H,y,C3,p,f,p_f
+PLPA2,Plantaginaceae,Plantago,patagonica,,woolly plantain,C3,a,H,y,C3,a,f,a_f
+POAL4,Polygalaceae,Polygala,alba,,white milkwort,,p,H,y,C3,p,f,p_f
+POBI,Poaceae,Poa,bigelovii,,Bigelow's bluegrass,C3,a,G,y,C3,a,g,a_g
+PODO3,Capparaceae,Polanisia,dodecandra,,redwhisker clammyweed,C3,a,H,y,C3,a,f,a_f
+PODOR,Capparaceae,Polanisia,dodecandra,subsp. riograndensis,Rio Grande clammyweed,C3,a,H,y,C3,a,f,a_f
+PODOT,Capparaceae,Polanisia,dodecandra,subsp. trachysperma,sandyseed clammyweed,C3,a,H,y,C3,a,f,a_f
+POFE,Poaceae,Poa,fendleriana,,muttongrass,C3,p,G,y,C3,p,g,p_g
+POFEF,Poaceae,Poa,fendleriana,subsp. fendleriana,muttongrass,C3,p,G,y,C3,p,g,p_g
+POFEL,Poaceae,Poa,fendleriana,subsp. longiligula,muttongrass,,p,G,y,C3,p,g,p_g
+POFR2,Salicaceae,Populus,fremontii,,Fremont cottonwood,,p,T ,y,C3,p,t,p_t
+POHA5,Portulacaceae,Portulaca,halimoides,,silkcotton purslane,C4,a,H/su,y,C4,a,f,a_f
+POJA5,Fabaceae,Pomaria,jamesii,,James' holdback,,p,ss/H,y,C3,p,f,p_f
+POOL,Portulacaceae,Portulaca,oleracea,,little hogweed,,a,H/su,y,C4,a,f,a_f
+POUN3,Capparaceae,Polanisia,uniglandulosa,,Mexican clammyweed,C3,ap,H,y,C3,p,f,p_f
+PRGL2,Fabaceae,Prosopis,glandulosa,,honey mesquite,C3,p,T/S,y,C3,p,t,p_t
+PRGLT,Fabaceae,Prosopis,glandulosa,var. torreyana,western honey mesquite,C3,p,T/S,y,C3,p,t,p_t
+PRPA2,Pedaliaceae,Proboscidea,parviflora,,doubleclaw,C3,a,H,y,C3,a,f,a_f
+PRPAP3,Pedaliaceae,Proboscidea,parviflora,subsp. parviflora,devil's claw,C3,a,H,y,C3,a,f,a_f
+PRVI,Rosaceae,Prunus,virginiana,,chokecherry,C3,p,T/S,y,C3,p,t,p_t
+PRVIM,Rosaceae,Prunus,virginiana,var. melanocarpa,black chokecherry,C3,p,T/S,y,C3,p,t,p_t
+PSAS2,Asteraceae,Psilactis,asteroides,,New Mexico tansyaster,,abp,H,y,NA,p,f,p_f
+PSLA3,Fabaceae,Psoralidium,lanceolatum,,salty popcornflower,,p,H,y,C3,p,f,p_f
+PSSC6,Fabaceae,Psorothamnus,scoparius,,broom dalea,,p,S/ss,y,C3,p,s,p_s
+PSSP,Asteraceae,Psilostrophe,sparsiflora,,greenstem paperflower,,p,ss/H,y,C3,p,f,p_f
+PSSPI,Poaceae,Pseudoroegneria,spicata,var. inermis,beardless wheatgrass,,p,G,y,NA,p,g,p_g
+PSSPS,Poaceae,Pseudoroegneria,spicata,subsp. spicata,bluebunch wheatgrass,,p,G,y,NA,p,g,p_g
+PSTA,Asteraceae,Psilostrophe,tagetina,,woolly paperflower,,p,H,y,NA,p,f,p_f
+PSTAT,Asteraceae,Psilostrophe,tagetina,var. tagetina,woolly paperflower,,p,H,y,C3,p,f,p_f
+PTTRA,Rutaceae,Ptelea,trifoliata,subsp. angustifolia ,common hoptree,,p,T/S,y,C3,p,t,p_t
+QUTU2,Fagaceae,Quercus,turbinella,,Sonoran scrub oak,C3,p,T/S,y,C3,p,t,p_t
+RACO3,Asteraceae,Ratibida,columnifera,,upright prairie coneflower,,p,H,y,C3,p,f,p_f
+RATA,Asteraceae,Ratibida,tagetes,,green prairie coneflower,,p,H,y,C3,p,f,p_f
+REAR,Euphorbiaceae,Reverchonia,arenaria,,sand reverchonia,C3,a,H,y,C3,a,f,a_f
+RHMI3,Anacardiaceae,Rhus,microphylla,,littleleaf sumac,C3,p,S/T,y,C3,p,s,p_s
+RHTR,Anacardiaceae,Rhus,trilobata,,skunkbush sumac,C3,p,S,y,C3,p,s,p_s
+RHTRP,Anacardiaceae,Rhus,trilobata,var. pilosissima,pubescent squawbush,C3,p,S,y,C3,p,s,p_s
+RILE,Grossulariaceae,Ribes,leptanthum,,trumpet gooseberry,,p,S,y,C3,p,s,p_s
+ROPA2,Brassicaceae,Rorippa,palustris,,bog yellowcress,,abp,H,y,C3,p,f,p_f
+RUAL4,Polygonaceae,Rumex,altissimus,,pale dock,C3,p,H,y,C3,p,f,p_f
+RUCR,Polygonaceae,Rumex,crispus,,curly dock,C3,p,H,y,C3,p,f,p_f
+RUSAM,Polygonaceae,Rumex,salicifolius,var. mexicanus,Mexican dock,C3,p,H,y,C3,p,f,p_f
+SAAB,Asteraceae,Sanvitalia,abertii,,Albert's creeping zinnia,,a,H,y,C3,a,f,a_f
+SACU,Alismaceae,Sagittaria,cuneata,,arumleaf arrowhead,,p,H,y,C3,p,f,p_f
+SAEX,Salicaceae,Salix,exigua,,narrowleaf willow,C3,p,T/S,y,C3,p,t,p_t
+SAFL5,Asteraceae,Sartwellia,flaveriae,,threadleaf glowwart,,p,H,y,C3,p,f,p_f
+SAGO,Salicaceae,Salix,gooddingii,,Goodding's willow,C3,p,T,y,C3,p,t,p_t
+SAHE3,Lamiaceae,Salvia,henryi,,crimson sage,,p,H,y,C3,p,f,p_f
+SASU7,Lamiaceae,Salvia,subincisa,,sawtooth sage,,a,H,y,C3,a,f,a_f
+SCAM6,Cyperaceae,Schoenoplectus,americanus,,chairmaker's bulrush,,p,G,y,NA,p,g,p_g
+SCBR2,Poaceae,Scleropogon,brevifolius,,burrograss,C4,p,G,y,C4,p,g,p_g
+SCLI,Brassicaceae,Schoenocrambe,linifolia,,flaxleaf plainsmustard,,p,H,y,C3,p,f,p_f
+SCLI12,Brassicaceae,Schoenocrambe,linearifolia,,slimleaf plainsmustard,,p,ss/H,y,C3,p,f,p_f
+SCMU6,Asteraceae,Schkuhria,multiflora,,manyflower false threadleaf,,a,H,y,C3,a,f,a_f
+SCPA10,Cactaceae,Sclerocactus,papyracanthus,,paperspine fishhook cactus,CAM,p,S/su,y,CAM,p,s,p_s
+SCSAH,Poaceae,Schizachyrium,sanguineum,var. hirtiflorum,crimson bluestem,,p,G,y,C4,p,g,p_g
+SCSC,Poaceae,Schizachyrium,scoparium,,little bluestem,,p,G,y,C4,p,g,p_g
+SEBA3,Fabaceae,Senna,bauhinioides,,twinleaf senna,C3,p,ss/H,y,C3,p,f,p_f
+SEDI3,Nyctaginaceae,Selinocarpus,diffusus,,,,p,S/ss/H,y,C3,p,s,p_s
+SEFL3,Asteraceae,Senecio,flaccidus,,threadleaf ragwort,C3,p,ss/H,y,NA,p,f,p_f
+SEFLD,Asteraceae,Senecio,flaccidus,var. douglasii,Douglas' ragwort,C3,p,ss/H,y,NA,p,f,p_f
+SEFLF,Asteraceae,Senecio,flaccidus,var. flaccidus,threadleaf ragwort,C3,p,ss/H,y,C3,p,f,p_f
+SELA3,Nyctaginaceae,Selinocarpus,lanceolatus,,lanceleaf moonpod,,p,ss/H,y,C3,p,f,p_f
+SELE6,Poaceae,Setaria,leucopila,,streambed bristlegrass,,p,G,y,NA,p,g,p_g
+SEMA5,Poaceae,Setaria,macrostachya,,large-spike bristlegrass,C4,p,G,y,C4,p,g,p_g
+SEMUM,Selaginellaceae,Selaginella,mutica,var. mutica,bluntleaf spikemoss,,p,H,y,C3,p,f,p_f
+SESPM,Asteraceae,Senecio,spartoides,var. multicapitatus,broom-like ragwort,C3,p,ss/H,y,NA,p,f,p_f
+SEUN,Selaginellaceae,Selaginella,underwoodii,,Underwood's spikemoss,,p,H,y,C3,p,f,p_f
+SEVI4,Poaceae,Setaria,viridis,,green bristlegrass,C4,a,G,y,C4,a,g,a_g
+SIAN2,Caryophyllaceae,Silene,antirrhina,,sleepy silene,C3,a,H,y,C3,a,f,a_f
+SIPL,Caryophyllaceae,Silene,plankii,,Plank's catchfly,C3,p,H,y,C3,p,f,p_f
+SOCAG,Asteraceae,Solidago,canadensis,var. gilvocanescens,shorthair goldenrod,,p,H,y,NA,p,f,p_f
+SOEL,Solanaceae,Solanum,elaeagnifolium,,silverleaf nightshade,C3,p,ss/H,y,C3,p,f,p_f
+SOHE,Solanaceae,Solanum,heterodoxum,,melonleaf nightshade,C3,a,H,y,C3,a,f,a_f
+SOJA,Solanaceae,Solanum,jamesii,,,C3,p,H,y,C3,p,f,p_f
+SONU,Fabaceae,Sophora,nuttalliana,,silky sophora,,p,H,y,C3,p,f,p_f
+SOVE6,Asteraceae,Solidago,velutina,,threenerve goldenrod,C3,p,ss/H,y,C3,p,f,p_f
+SPAI,Poaceae,Sporobolus,airoides,,alkali sacaton,C4,p,G,y,C4,p,g,p_g
+SPCO4,Poaceae,Sporobolus,contractus,,spike dropseed,C4,p,G,y,C4,p,g,p_g
+SPCOC,Malvaceae,Sphaeralcea,coccinea,subsp. coccinea,scalet globemallow,,bp,ss/H,y,C3,p,f,p_f
+SPCOE,Malvaceae,Sphaeralcea,coccinea,subsp. elata,scarlet globemallow,,bp,ss/H,y,C3,p,f,p_f
+SPCR,Poaceae,Sporobolus,cryptandrus,,sand dropseed,C4,p,G,y,C4,p,g,p_g
+SPDI3,Malvaceae,Sphaeralcea,digitata,,juniper globemallow,,p,ss/H,y,C3,p,f,p_f
+SPDID,Malvaceae,Sphaeralcea,digitata,subsp. digitata,juniper globemallow,,p,ss/H,y,C3,p,f,p_f
+SPFE,Malvaceae,Sphaeralcea,fendleri,,Fendler's globemallow,,p,ss/H,y,C3,p,f,p_f
+SPFEF,Malvaceae,Sphaeralcea,fendleri,subsp. fendleri,Fendler's globemallow,,p,ss/H,y,C3,p,f,p_f
+SPFL2,Poaceae,Sporobolus,flexuosus,,mesa dropseed,C4,p,G,y,C4,p,g,p_g
+SPGI,Poaceae,Sporobolus,giganteus,,giant dropseed,C4,p,G,y,C4,p,g,p_g
+SPGRP2,Malvaceae,Sphaeralcea,grossulariifolia,subsp. pedata,gooseberryleaf globemallow,,p,ss/H,y,C3,p,f,p_f
+SPHA,Malvaceae,Sphaeralcea,hastulata,,spear globemallow,,p,ss/H,y,C3,p,f,p_f
+SPIN2,Malvaceae,Sphaeralcea,incana,,gray globemallow,,p,ss/H,y,C3,p,f,p_f
+SPLA,Malvaceae,Sphaeralcea,laxa,,caliche globemallow,,p,ss/H,y,C3,p,f,p_f
+SPLE,Malvaceae,Sphaeralcea,leptophylla,,scaly globemallow,,p,ss/H,y,C3,p,f,p_f
+SPNE,Poaceae,Sporobolus,nealleyi,,gyp dropseed,C4,p,G,y,C4,p,g,p_g
+SPORO,Poaceae,Sporobolus,sp.,,dropseed,C4,p,G,y,C4,p,g,p_g
+SPPO6,Malvaceae,Sphaeralcea,polychroma,,hot springs globemallow,,p,ss/H,y,C3,p,f,p_f
+SPPR3,Malvaceae,Sphaeralcea,procera,,Luna County globemallow,,p,ss/H,y,C3,p,f,p_f
+SPWR,Malvaceae,Sphaeralcea,wrightii,,Wright's globemallow,,p,ss/H,y,C3,p,f,p_f
+SPWR2,Poaceae,Sporobolus,wrightii,,big sacaton,C4,p,G,y,C4,p,g,p_g
+STCAC,Brassicaceae,Streptanthus,carinatus,subsp. carinatus,lyreleaf jewelflower,,ab,H,y,C3,a,f,a_f
+STEM,Zygophyllaceae,Larrea,tridentata,,creosote bush,C3,p,S,y,C3,p,s,p_s
+STLO,Caryophyllaceae,Stellaria,longifolia,,longleaf starwort,,p,H,y,C3,p,f,p_f
+STMIM,Asteraceae,Stephanomeria,minor,var. minor,narrowleaf wirelettuce,,p,ss/H,y,NA,p,f,p_f
+STPA4,Asteraceae,Stephanomeria,pauciflora,,brownplume wirelettuce,C3,p,ss/H,y,C3,p,f,p_f
+SUMO,Chenopodiaceae,Suaeda,moquinii,,Mojave seablite,,p,S/ss/H,y,NA,p,s,p_s
+SUSU,Chenopodiaceae,Suaeda,suffrutescens,,desert seepweed,,p,S/ss/H,y,C4,p,s,p_s
+SYDI2,Asteraceae,Symphyotrichum,divaricatum,,southern annual saltmarsh aster,C3,ab,H,y,NA,a,f,a_f
+SYFAC,Asteraceae,Symphyotrichum,falcatum,var. commutatum,white prairie aster,C3,p,H,y,NA,p,f,p_f
+SYLAH6,Asteraceae,Symphyotrichum,lanceolatum,subsp. hesperium var. hesperium,white panicle aster,C3,p,H,y,NA,p,f,p_f
+SYPA,Caprifoliaceae,Symphoricarpos,palmeri,,Palmer's snowberry,,p,S,y,C3,p,s,p_s
+SYPRP,Asteraceae,Symphyotrichum,praealtum,var. praealtum,willowleaf aster,,p,H,y,NA,p,f,p_f
+SYRO,Caprifoliaceae,Symphoricarpos,rotundifolius,,roundleaf snowberry,,p,S,y,C3,p,s,p_s
+TEAR4,Asteraceae,Tetraneuris,argentea,,perkysue,,p,H,y,C3,p,f,p_f
+TECO,Verbenaceae,Tetraclea,coulteri,,Coulter's wrinklefruit,,p,ss/H,y,C3,p,f,p_f
+TELA,Lamiaceae,Teucrium,laciniatum,,lacy germander,,p,H,y,C3,p,f,p_f
+THAC,Asteraceae,Thymophylla,acerosa,,pricklyleaf dogweed,C3,p,ss/H,y,C3,p,f,p_f
+THFE,Ranunculaceae,Thalictrum,fendleri,,Fendler's meadow-rue,,p,H,y,C3,p,f,p_f
+THLO,Asteraceae,Thelesperma,longipes,,longstalk greenthread,,p,ss/H,y,C3,p,f,p_f
+THME,Asteraceae,Thelesperma,megapotamicum,,Hopi tea greenthread,,p,H,y,C3,p,f,p_f
+THPEB,Asteraceae,Thymophylla,pentachaeta,var. belenidium,fiveneedle pricklyleaf,,p,ss/H,y,NA,p,f,p_f
+THPU3,Brassicaceae,Thelypodiopsis,purpusii,,Purpus' tumblemustard,,b,H,y,C3,a,f,a_f
+THWR,Brassicaceae,Thelypodium,wrightii,,Wright's thelypody,,bp,H,y,C3,p,f,p_f
+TICA3,Boraginaceae,Tiquilia,canescens,,woody crinklemat,,p,ss,y,C3,p,s,p_s
+TICAC,Boraginaceae,Tiquilia,canescens,var. canescens,woody crinklemat,,p,ss ,y,NA,p,s,p_s
+TIHI,Boraginaceae,Tiquilia,hispidissima,,hairy crinklemat,,p,ss,y,C3,p,s,p_s
+TILA2,Amaranthaceae,Tidestromia,lanuginosa,,wooly tidestromia,C4,a,H,y,C4,a,f,a_f
+TOAN,Asteraceae,Townsendia,annua,,annual Townsend daisy,,a,H,y,C3,a,f,a_f
+TOEX,Asteraceae,Townsendia,eximia,,tall Townsend daisy,,p,H,y,C3,p,f,p_f
+TOEX2,Asteraceae,Townsendia,exscapa,,stemless Townsend daisy,,p,H,y,C3,p,f,p_f
+TRBE,Poaceae,Tragus,berteronianus,,spiked bur grass,,a,G,y,C3,a,g,a_g
+TRCAW2,Nyctaginaceae,Tripterocalyx,carneus,var. wootonii,Wooton's sandpuffs,,a,H,y,C3,a,f,a_f
+TRMA20,Juncaginaceae,Triglochin,maritimum,,seaside arrowgrass,,p,G,y,NA,p,g,p_g
+TRMI6,Nyctaginaceae,Tripterocalyx,micranthus,,smallflower sandverbena,,a,H,y,C3,a,f,a_f
+TRMU,Poaceae,Tridens,muticus,,slim tridens,,p,G,y,C4,p,g,p_g
+TRMUE,Poaceae,Tridens,muticus,var. elongatus,slim tridens,,p,G,y,C4,p,g,p_g
+TRPI,Commelinaceae,Tradescantia,pinetorum,,pinewoods spiderwort,,p,H,y,C3,p,f,p_f
+TRPO2,Aizoaceae,Trianthema,portulacastrum,,desert horsepurslane,,ap,H/su,y,C4,p,f,p_f
+TRRA,Poaceae,Tragus,racemosus,,stalked bur grass,,a,G,y,C3,a,g,a_g
+TRRA5,Euphorbiaceae,Tragia,ramosa,,branched noseburn,C3,p,V/S/ss/H,y,C3,p,f,p_f
+VEAN2,Scrophulariaceae,Veronica,anagallis-aquatica,,water speedwell,,bp,H,y,C3,p,f,p_f
+VEBR,Verbenaceae,Verbena,bracteata,,bigbract verbena,C3,abp,H,y,C3,p,f,p_f
+VEEN,Asteraceae,Verbesina,encelioides,,golden crownbeard,C3,a,H,y,NA,a,f,a_f
+VEENE2,Asteraceae,Verbesina,encelioides,subsp. exauriculata,golden crownbeard,C3,a,H,y,C3,a,f,a_f
+VEENE3,Asteraceae,Verbesina,encelioides,subsp. encelioides,golden crownbeard,C3,a,H,y,C3,a,f,a_f
+VENEH,Verbenaceae,Verbena,neomexicana,var. hirtella,hillside vervain,,p,H,y,C3,p,f,p_f
+VIAR2,Vitaceae,Vitis,arizonica,,canyon grape,,p,WV,y,C3,p,s,p_s
+VIDE3,Asteraceae,Viguiera,dentata,,toothleaf goldeneye,,p,ss/H,y,C3,p,f,p_f
+VILUL2,Fabaceae,Vicia,ludoviciana,subsp. ludoviciana,Lousiana vetch,,a,V/H,y,C3,a,f,a_f
+VINE,,unk vine,unk vine,,unk vine,,p,V,y,C3,p,s,p_s
+VUOC,Poaceae,Vulpia,octoflora,var. glauca,sixweeks fescue,C3,a,G,y,C3,a,g,a_g
+WONE,Dryopteridaceae,Woodsia,neomexicana,,New Mexico cliff fern,,p,H,y,C3,p,f,p_f
+XAST,Asteraceae,Xanthium,strumarium,,rough cocklebur,C3,a,H,y,NA,a,f,a_f
+XASTC,Asteraceae,Xanthium,strumarium,var. canadense,Canada cocklebur,C3,a,H,y,C3,a,f,a_f
+XASTG,Asteraceae,Xanthium,strumarium,var. glabratum,rough cocklebur,C3,a,H,y,NA,a,f,a_f
+YUBA,Agavaceae,Yucca,baccata,,banana yucca,CAM,p,S/ss/H,y,CAM,p,s,p_s
+YUBAI,Agavaceae,Yucca,baileyi,var. intermedia,intermediate yucca,,p,S/ss/H,y,CAM,p,s,p_s
+YUEL,Agavaceae,Yucca,elata,,soaptree yucca,,p,S/ss/H,y,CAM,p,s,p_s
+YUGL,Agavaceae,Yucca,glauca,,soapweed yucca,,p,S/ss/H,y,CAM,p,s,p_s
+ZIGR,Asteraceae,Zinnia,grandiflora,,Rocky Mountain zinnia,C3,p,S/ss/H,y,C3,p,s,p_s
+CUSCU,Cuscutaceae,Cuscuta,spp.,,dodder,,,,,C3,a,f,a_f
+LEMNA,Lemnaceae,Lemna,spp.,,duckweed,,,,,C3,a,f,a_f
