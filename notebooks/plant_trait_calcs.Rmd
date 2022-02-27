@@ -1,0 +1,355 @@
+---
+title: "R Notebook"
+output: html_notebook
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r Collected Prelim & Summary}
+sd <- read_excel("~/Dropbox/Projects/Sev/Plants/Data/Samples/sev_plant_traits_collected_samples_2017.xlsx", 
+                 sheet=1) %>%
+  mutate_at(vars(kartez), as.factor) 
+```
+
+##### Individual-Level Data
+
+```{r}
+##### samples #####
+samp <- read_excel("~/Dropbox/Projects/Sev/Plants/Data/Samples/sev_plant_traits_collected_samples_2017.xlsx", 
+                 sheet=1) %>%
+  mutate_at(vars(kartez), as.factor) %>%
+  select(code, kartez, site)
+
+##### leaf data #####
+# leaf area
+lf_area <- read_excel("~/Dropbox/Projects/Sev/Plants/Data/Leaves/sev_leaf_area_2017-18.xlsx", sheet=1) %>% 
+  group_by(code) %>%
+  summarise(lf_sum_area=sum(area), 
+            lf_n_pieces = max(n_pieces),
+            lf_whole_ind = as.logical(max(leaves))) 
+
+# leaf mass
+lf_mass <- read_excel("~/Dropbox/Projects/Sev/Plants/Data/Leaves/sev_leaf_masses_2017-18.xlsx", sheet=1) %>%
+  rename(lf_wet_mass = wet, 
+         lf_dry_mass = dry,
+         lf_petiole_ind = petiole)
+
+# leaf isotopes
+lf_iso <- read_excel("~/Dropbox/Projects/Sev/Plants/Data/Isotopes/sev_plant_isotopes_2017-18.xlsx", sheet=1) %>%
+  select(code = id, mass:cn)
+
+##### Stems and Roots #####
+
+st_rt <- read_excel("~/Dropbox/Projects/Sev/Plants/Data/Roots and Stems/sev_stem_root_data_2017-18.xlsx", sheet=1) %>%
+  mutate_at(vars(code), funs(substr(., 2, nchar(.)))) # remove leading "p"
+
+fr_shp <- read_excel("~/Dropbox/Projects/Sev/Plants/Data/Roots and Stems/Specific Root Length/Measurements/fine_root_shapes_2017-18.xlsx") %>%
+  mutate_at(vars(code), funs(as.character(.)))
+
+fr_mass <- read_excel("~/Dropbox/Projects/Sev/Plants/Data/Roots and Stems/fine_root_mass.xlsx") %>%
+  mutate_at(vars(code), funs(as.character(.)))
+
+##### Seed Mass #####
+
+seed_mass <- read_excel("~/Dropbox/Projects/Sev/Plants/Data/Seeds/sev_seed_masses.xlsx") %>% 
+  filter(include=="T") %>% # went through all photos and identified samples to exclude (immature, not seeds, etc.)
+  select(code, seed_mass_sum=mass, seed_n=count)
+##### Join #####
+
+indv_data <- samp %>%
+  left_join(lf_area, by = "code") %>%
+  left_join(lf_mass, by = "code") %>%
+  left_join(lf_iso , by = "code") %>%
+  left_join(st_rt  , by = "code") %>%
+  left_join(fr_shp , by = "code") %>%
+  left_join(fr_mass, by = "code") %>%
+  left_join(seed_mass, by = "code") %>%
+  write_csv(path = "~/Dropbox/Projects/Sev/Plants/Data/All Traits/indv_samp_traits_2017-18.csv")
+  
+```
+
+##### Leaves
+```{r SLA Data Prelim & Manipulation}
+
+# load raw data
+ad <- read_excel("~/Dropbox/Projects/Sev/Plants/data/Leaves/sev_leaf_area_2017-18.xlsx")
+md <- read_excel("~/Dropbox/Projects/Sev/Plants/data/Leaves/sev_leaf_masses_2017-18.xlsx",
+                 na="NA")
+
+# merge datasets and make new variables
+ld <- dcast(ad, formula= ... ~ ., value.var = "area", fun.aggregate = sum) %>%
+  rename(area = ".") %>%
+  left_join(md, "code") %>%
+  left_join(sd[c("kartez", "sla_code")], by=c("code" = "sla_code")) %>%
+  select(kartez, code, file, n_pieces:petiole) %>%
+  as.tibble() %>%
+  mutate(ldmc = dry / wet, sla= area / dry, lma= 1 / sla, 
+         avg_area = if_else(leaves, area/n_pieces, as.double(NA))) %>%
+  group_by(kartez)
+
+ld_ag <- ld %>%
+  summarise_at(vars(ldmc, sla, lma, area), mean, na.rm=TRUE) %>%
+  mutate_at(vars(area), funs(ifelse(is.nan(.), NA, .)))
+
+```
+
+##### Stems and Taproots
+```{r Stem / Root Data Prelim & Manipulation}
+
+srd.raw <- read_xlsx("~/Dropbox/Projects/Sev/Plants/Data/Roots and Stems/sev_stem_root_data_2017-18.xlsx",
+                     sheet=1,
+                     na="NA")
+
+# QC
+
+sum(is.na(srd.raw$stm_dry2) & !is.na(srd.raw$stm_dry1)) # 0
+sum(is.na(srd.raw$rt_dry2) & !is.na(srd.raw$rt_dry1)) # 0
+
+# new variables
+srd <- srd.raw %>%
+  mutate(sdmc = stm_dry2/stm_wet) %>% # stem dry matter content
+  mutate(rdmc = rt_dry2/rt_wet) %>% # taproot dry matter content
+  mutate(stm_vol = pi * stm_len * ((stm_d1 / 2) ^ 2 + (stm_d1 / 2) * # stem volume
+                                     (stm_d2 / 2) + (stm_d2/2) ^ 2) / 3) %>%
+  mutate(sdens = stm_dry2/stm_vol) %>% # stem density
+  mutate(rt_vol = pi * rt_len * ((rt_d1 / 2) ^ 2 + (rt_d1 / 2) * # taproot volume
+                                   (rt_d2 / 2) + (rt_d2/2) ^ 2) / 3) %>%
+  mutate(rdens = rt_dry2/rt_vol) %>% # taproot density
+  mutate_at(vars(code), # remove preceding "p" from code
+            .funs= function(x) substr(.$code, 
+                                      2, 
+                                      nchar(.$code))) %>%
+  left_join(sd %>% select(kartez, rt_stm_code), # get spp. codes with merge
+            by=c("code" = "rt_stm_code")) %>%
+  filter(code != "325A" & (rdmc < 1 | is.na(rdmc))) %>% # sample with unknown spp. id & 2 exrtreme root densities
+  mutate_at(vars(stm_wet:rdens), funs(if_else(is.nan(.), as.numeric(NA), .))) %>%
+  group_by(kartez)
+
+srd_ag <- srd %>%
+  summarize_at(vars(sdmc, rdmc, sdens, rdens), mean, na.rm=TRUE)
+```
+
+##### Specific Root Length
+```{r SRL Preliminary}
+
+## Input SmartRoot data
+files <- list.files("~/Dropbox/Projects/Sev/Plants/Data/Roots and Stems/Specific Root Length/Measurements/")
+codes <- substr(files, 8, 10)
+
+## Input root mass data
+rmd <- read_excel("~/Dropbox/Projects/Sev/Plants/Data/Roots and Stems/fine_root_mass.xlsx") %>%
+  mutate(frdmc = dry / wet) %>%
+  mutate_at(vars(code), funs(as.character(.)))
+
+rd1 <- setNames(lapply(files, function(x) {
+  
+  rds <- read.csv(paste("~/Dropbox/Projects/Sev/Plants/Data/Roots and Stems/Specific Root Length/Measurements/", x, sep=""))
+  return(data.frame(length=rds$length, 
+                    diam=rds$diameter, 
+                    vol=rds$volume))
+  rm(rds)
+}
+), codes)
+
+rd.raw <- do.call(rbind, lapply(rd1, function(x) {
+  
+  c(len=sum(x$length), diam=quantile(x$diam, .95), vol=sum(x$vol))
+  
+})) %>%
+  as.data.frame() %>%
+  mutate("code" = row.names(.)) 
+
+#write_csv(rd.raw, path = "~/Dropbox/Projects/Sev/Plants/Data/Roots and Stems/Specific Root Length/Measurements/fine_root_shapes_2017-18.csv")
+
+
+rd <- rd.raw %>%
+  left_join(sd[, c("kartez", "code")], by="code") %>%
+  left_join(rmd, by="code") %>%
+  select(code, kartez, len:frdmc) %>%
+  rename(diam = "diam.95%") %>%
+  mutate(srl = dry / len, 
+         frdens = dry/vol) %>%
+  droplevels() %>%
+  group_by(kartez)
+
+srl_ag <- rd %>% 
+  summarize(fr.diam = mean(diam),
+            fr.dmc = mean(frdmc), 
+            fr.srl = mean(srl), 
+            fr.dens = mean(frdens))
+
+```
+
+##### Isotopes
+```{r Isotope Data}
+cnd <- read_excel("~/Dropbox/Projects/Sev/Plants/Data/Isotopes/sev_plant_isotopes_2017-18.xlsx") %>%
+  select(-(tray:tray_id)) %>%
+  left_join(sd, c("id" = "sla_code")) %>%
+  select(kartez, id, site, mass:cn) %>%
+  group_by(kartez)
+
+cnd_ag <- cnd %>%
+  summarize_at(vars(d15N, d13C, pN, pC, cn), mean, na.rm=TRUE)
+
+```
+
+##### Seeds
+```{r}
+sed <- read_excel("~/Dropbox/Projects/Sev/Plants/Data/Seeds/sev_seed_masses.xlsx") %>%
+  mutate(seed_mass = mass/count) %>%
+  filter(include == "T")
+
+sed_ag <- sed %>%
+  mutate(seed_mass = mass/count) %>%
+  group_by(kartez) %>%
+  summarize(count = sum(count), 
+            mass = sum(mass),
+            sd = sd(seed_mass),
+            cv = sd/mean(seed_mass),
+            samples = n()) %>%
+  mutate(seed_mass = mass / count) %>%
+  arrange(desc(seed_mass)) %>%
+  select(kartez, seed_mass)
+
+sed_ag
+
+# sed_ag %>%
+#   ggplot() + 
+#   geom_histogram(aes(x=sd))
+
+sed %>% 
+  filter(kartez == "CINE")
+
+```
+
+##### Height
+```{r Height Data Input and Manipulation}
+
+# load quadrat data for flats and PJ
+
+qdf <- read.csv("~/Dropbox/Projects/Sev/Plants/data/Biomass/sev129_nppcorequadrat_20170621.csv")
+
+qdp <- read.csv("~/Dropbox/Projects/Sev/Plants/data/Biomass/sev278_npppinjquadrat_20161214.csv") %>%
+  rename(web = plot, plot = transect)
+
+nas <- c("-888", "-999", -888, -999, "NONE") # na values
+
+# manipulate quadrat data for height calculations
+qd <- rbind(qdf, qdp) %>%
+  select(c("year", "season", "site", "species", "obs", "height", "count", "comment")) %>%
+  rename(kartez = species) %>%
+  filter(season == 3) %>%
+  mutate_all(funs(replace(., . %in% nas, NA))) %>%
+  mutate_at(vars(kartez), funs(replace(., . == " BREUC2", "BREUC2"))) %>%
+  mutate_at(vars(kartez), funs(replace(., . == "ecfef3", "ECFEF3"))) %>%
+  droplevels()
+
+# get height data aggregates
+
+hdI <- qd %>% # all sites separately 
+  group_by(kartez, site) %>%
+  filter(count > 0) %>%
+  summarize(n_obs = sum(count, na.rm=TRUE),
+            avg.height = sum(count * height, na.rm=TRUE)/sum(count, na.rm=TRUE),
+            max.height = max(height, na.rm=TRUE), 
+            p95.height = quantile(height, .95, na.rm=TRUE))
+
+hdA <- qd %>% # all sites pooled
+  group_by(kartez) %>%
+  filter(count > 0) %>%
+  summarize(n_obs = sum(count, na.rm=TRUE),
+            avg.height = sum(count * height, na.rm=TRUE)/sum(count, na.rm=TRUE),
+            max.height = max(height, na.rm=TRUE), 
+            p95.height = quantile(height, .95, na.rm=TRUE)) %>%
+  mutate(site = as.factor("A")) %>%
+  select(1, site, 2:5)
+
+hdF <- qd %>% # flats only
+  filter(site != "P") %>%
+  group_by(kartez) %>%
+  filter(count > 0) %>%
+  summarize(n_obs = sum(count, na.rm=TRUE),
+            avg.height = sum(count * height, na.rm=TRUE)/sum(count, na.rm=TRUE),
+            max.height = max(height, na.rm=TRUE), 
+            p95.height = quantile(height, .95, na.rm=TRUE)) %>%
+  mutate(site=as.factor("F")) %>%
+  select(1, site, 2:5)
+
+# combine heights from site sets and make wide format
+
+hd_ag <- bind_rows(hdA, hdF, hdI) %>%
+  mutate_at(vars(site), as.factor) %>%
+  as.data.table() %>%
+  dcast(form = kartez ~ site,
+        value.var= c("avg.height", "max.height", "p95.height"),
+        fill=NA) %>%
+  as_tibble() 
+
+# QC
+
+ggplot(data=hd_ag, aes(hd_ag$p95.height_A)) + geom_histogram()
+
+filter(hd_ag, p95.height_A >=150)
+```
+
+##### Life History
+```{r Add whole plant and taxon data}
+allsplst <- read_csv("~/Dropbox/Projects/Sev/Plants/Species /sev_all_spp_list_augmented.csv") %>%
+  select(kartez, life_cycle, life_form, native, path, a_p, g_f, apgf) %>%
+  mutate_at(vars(2:8), as.factor)
+
+splst <- read_csv("~/Dropbox/Projects/Sev/Plants/Data/All Traits/traits_spp_list.csv")
+
+lhd <- left_join(splst, allsplst, by="kartez") %>% 
+  as.tibble() %>%
+  mutate(species.old = substr(taxon, regexpr(pattern="_", text=taxon) + 1, nchar(taxon)),
+         species.new = substr(new.taxon, regexpr(pattern="_", text=new.taxon) + 1, nchar(new.taxon)),
+         genus.old = substr(taxon, 1, regexpr(pattern="_", text=taxon) - 1),
+         genus.new = substr(new.taxon, 1, regexpr(pattern="_", text=new.taxon) - 1)) %>%
+  droplevels() %>%
+  select(kartez, family, genus.old, genus.new, species.old, species.new, 
+         taxon.old=taxon, taxon.new=new.taxon, life_cycle:apgf)
+
+```
+
+##### Combine Trait Data
+
+```{r}
+
+# all samples data
+ad <- sd %>% ungroup() %>%
+  left_join(select(ld %>% ungroup(), code, n_pieces:avg_area) , by=c("sla_code" = "code")) %>%
+  left_join(select(srd %>% ungroup(), -kartez), by=c("rt_stm_code" = "code")) %>%
+  left_join(select(rd %>% ungroup(), -kartez), by="code") %>%
+  left_join(select(cnd %>% ungroup(), -kartez, -site), by=c("sla_code" = "id")) 
+
+# data aggregated by species  
+
+ad_ag <- reduce(list(lhd, hd_ag, ld_ag, cnd_ag, srd_ag, srl_ag, sed_ag), 
+                left_join, 
+                by="kartez") %>%
+  mutate_at(vars(avg.height_A:seed_mass), round, digits=4)
+
+comp_ad <- ad_ag %>% 
+  select(ldmc:seed_mass) %>% 
+  complete.cases() %>%
+  sum()
+
+
+# write.csv(ad_ag, file="~/Dropbox/Projects/Sev/Plants/Data/All Traits/sev_all_traits_Nov2018.csv", row.names=FALSE)
+```
+
+```{r Write Out Final Traits File}
+allagf <- allag[, c("kartez", "family", "genus", 
+                    "species", "taxon", "synonym", "native", "g_f", "path", "a_p", 
+                    names(allag)[2:3], names(allag)[5:9], # lab measures
+                    names(allag)[c(12, 14, 16, 18, 20, 22)], # mean height
+                    names(allag)[c(13, 15, 17, 19, 21, 23)], # max height
+                    names(allag)[32:63])] # biomass data
+
+allagc <- allagf[!complete.cases(allagf[, c(8:16, 56)]), ]
+
+write.csv(allagf, file="~/Dropbox/Projects/Sev/data/sev_all_traits_Feb2018.csv", 
+          row.names=FALSE)
+```
+
