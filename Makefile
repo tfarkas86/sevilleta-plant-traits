@@ -31,6 +31,7 @@ endif
 # 5.0 create_pics_all_traits.R
 # 6.0 create_pics_w_zero_exclusions.R
 # Modeling
+# Univariate Models (Exploratory): Linear, Quadratic, Cubic, LOWESS
 
 ## Install Python Dependencies
 requirements: test_environment
