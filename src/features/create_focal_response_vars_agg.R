@@ -1,6 +1,5 @@
 library(readr)
 library(dplyr)
-library(readr)
 
 repo_home = "~/Dropbox/1_Work/1_Research/Whitney-Rudgers Lab/Sev/Plants/sevilleta-plant-traits/"
 

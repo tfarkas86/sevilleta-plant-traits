@@ -33,7 +33,7 @@ st_rt <- read_excel(paste0(repo_home, "data/raw/sev_stem_root_data_2017-18.xlsx"
   mutate_at(vars(code), funs(substr(., 2, nchar(.)))) # remove leading "p"
 
 # fine root shapes
-fr_shp <- read_excel(paste0(repo_home, "data/processed/fine_root_shapes_2017-18.xlsx")) %>%
+fr_shp <- read_csv(paste0(repo_home, "data/processed/fine_root_shapes_2017-18.csv")) %>%
   mutate_at(vars(code), funs(as.character(.)))
 
 # fine root mass
@@ -56,4 +56,5 @@ indv_data <- samp %>%
   left_join(fr_shp , by = "code") %>%
   left_join(fr_mass, by = "code") %>%
   left_join(seed_mass, by = "code") %>%
-  write_csv(path = paste0(repo_home, "data/processed/indv_samp_traits_2017-18.csv"))
+  write_csv(file = paste0(repo_home, "data/processed/indv_samp_traits_2017-18.csv"))
+

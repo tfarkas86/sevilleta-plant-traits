@@ -1,6 +1,9 @@
 library(dplyr)
+library(tidyr)
 library(readr)
+library(readxl)
 library(maditr)
+library(purrr)
 
 repo_home = "~/Dropbox/1_Work/1_Research/Whitney-Rudgers Lab/Sev/Plants/sevilleta-plant-traits/"
 
@@ -20,7 +23,7 @@ ld <- dcast(ad, formula= ... ~ ., value.var = "area", fun.aggregate = sum) %>%
   left_join(md, "code") %>%
   left_join(sd[c("kartez", "sla_code")], by=c("code" = "sla_code")) %>%
   select(kartez, code, file, n_pieces:petiole) %>%
-  as.tibble() %>%
+  as_tibble() %>%
   mutate(ldmc = dry / wet, sla= area / dry, lma= 1 / sla, 
          avg_area = if_else(leaves, area/n_pieces, as.double(NA))) %>%
   group_by(kartez)
@@ -59,6 +62,10 @@ srd_ag <- srd %>%
 
 #### Specific Root Length ####
 rd.raw <- read_csv(paste0(repo_home, "data/processed/fine_root_shapes_2017-18.csv"))
+rmd <- read_excel(paste0(repo_home, "data/raw/fine_root_mass.xlsx")) %>%
+  mutate(frdmc = dry / wet) %>%
+  mutate_at(vars(code), funs(as.character(.)))
+
 
 rd <- rd.raw %>%
   mutate(across(code, ~ as.character(.x))) %>%
@@ -174,7 +181,7 @@ allsplst <- read_csv(paste0(repo_home, "data/raw/sev_all_spp_list_augmented.csv"
 splst <- read_csv(paste0(repo_home, "data/raw/traits_spp_list.csv"))
 
 lhd <- left_join(splst, allsplst, by="kartez") %>% 
-  as.tibble() %>%
+  as_tibble() %>%
   mutate(species.old = substr(taxon, regexpr(pattern="_", text=taxon) + 1, nchar(taxon)),
          species.new = substr(new.taxon, regexpr(pattern="_", text=new.taxon) + 1, nchar(new.taxon)),
          genus.old = substr(taxon, 1, regexpr(pattern="_", text=taxon) - 1),
@@ -199,5 +206,5 @@ ad_ag <- reduce(list(lhd, hd_ag, ld_ag, cnd_ag, srd_ag, srl_ag, sed_ag),
   mutate_at(vars(avg.height_A:seed_mass), round, digits=4)
 
 #### Write Out ####
-write.csv(ad_ag, file="~/Dropbox/Projects/Sev/data/sev_all_traits_Feb2018.csv", 
+write.csv(ad_ag, file=paste0(repo_home, "/data/processed/sev_all_traits_raw.csv"), 
           row.names=FALSE)
