@@ -41,3 +41,5 @@ all_traits <-
   
   # join in cv values
   inner_join(vars_wide)
+
+write_csv(all_traits, paste0(repo_home, "data/interim/all_traits_pic_prep.csv"))

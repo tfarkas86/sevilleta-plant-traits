@@ -73,6 +73,8 @@ vars_tidy <- quad_metrics %>%
               arrange(desc(metric), allometry) %>%
               ungroup())
 
+write_csv(vars_tidy, paste0(repo_home, "data/interim/reponse_vars_spp_tidy.csv"))
+
 
 # write out widened file for PICs
 vars_wide <- vars_tidy %>% 
