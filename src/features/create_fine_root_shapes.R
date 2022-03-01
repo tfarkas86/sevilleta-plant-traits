@@ -1,20 +1,19 @@
 library(readr)
 library(dplyr)
-
-repo_home = "~/Dropbox/1_Work/1_Research/Whitney-Rudgers Lab/Sev/Plants/sevilleta-plant-traits/"
+library(here)
 
 ## Root mass data
-rmd <- read_excel(paste0(repo_home, "data/raw/fine_root_mass.xlsx")) %>%
+rmd <- read_excel(here("data", "raw", "fine_root_mass.xlsx")) %>%
   mutate(frdmc = dry / wet) %>%
   mutate_at(vars(code), funs(as.character(.)))
 
 ## SmartRoot data
-files <- list.files(paste0(repo_home, "data/raw/fine-root-length/"))
+files <- list.files(here("data", "raw", "fine-root-length/"))
 codes <- substr(files, 8, 10)
 
 # loop files and concatenate
 rd1 <- setNames(lapply(files, function(x) {
-  rds <- read.csv(paste0(repo_home,"data/raw/fine-root-length/", x))
+  rds <- read.csv(here("data", "raw", "fine-root-length", x))
   print(rds)
   return(data.frame(length=rds$length, 
                     diam=rds$diameter, 
@@ -33,4 +32,4 @@ rd.raw <- do.call(rbind, lapply(rd1, function(x) {
   mutate("code" = row.names(.)) 
 
 # write out
-write_csv(rd.raw, path = paste0(repo_home, "data/processed/fine_root_shapes_2017-18.csv"))
+write_csv(rd.raw, path = here("data", "processed", "fine_root_shapes_2017-18.csv"))

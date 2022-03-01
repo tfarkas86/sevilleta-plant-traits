@@ -1,14 +1,13 @@
 library(readr)
 library(dplyr)
+library(here)
 
-repo_home = "~/Dropbox/1_Work/1_Research/Whitney-Rudgers Lab/Sev/Plants/sevilleta-plant-traits/"
+all_traits <- read_csv(here("data", "interim", "all_traits_pic_prep.csv"))
 
-all_traits <- read_csv(paste0(repo_home, "data/interim/all_traits_pic_prep.csv"))
-
-spp_tree <- read.tree(paste0(repo_home, "data/raw/sev_tree_101spp.tre"))
+spp_tree <- read.tree(here("data", "raw", "sev_tree_101spp.tre"))
 
 # get ranked list of zeros
-temp_cv <- read_csv(paste0(repo_home, "data/interim/reponse_vars_spp_tidy.csv"))
+temp_cv <- read_csv(here("data", "interim", "reponse_vars_spp_tidy.csv"))
 
 zranks <- temp_cv %>%
   filter(site == "F", 
@@ -34,7 +33,7 @@ all_traits2 <- all_traits %>%
   drop_na(nexclude)
 
 ranks <- unique(zranks$nexclude)[order(unique(zranks$nexclude))]
-tree <- read.tree("~/Dropbox/Projects/Sev/Plants/sev_traits_cv_manuscript/Data/sev_traits_tree101.tre")
+tree <- spp_tree
 
 inranks <- ranks[1:20]
 # loop through species rareness
@@ -65,5 +64,5 @@ rare_list <- lapply(inranks, function(rank) {
   
 }) %>% setNames(inranks)
 
-save(rare_list, 
-     file= paste0(repo_home, "data/interim/rare_list.RData"))
+saveRDS(rare_list, 
+     file= here("data", "interim", "rare_list.rds"))

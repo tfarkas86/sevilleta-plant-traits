@@ -2,11 +2,9 @@ library(readr)
 library(dplyr)
 library(tidyr)
 
-repo_home = "~/Dropbox/1_Work/1_Research/Whitney-Rudgers Lab/Sev/Plants/sevilleta-plant-traits/"
-
 #### Reshape Raw Data ####
 # Input raw data
-ab.raw <- read_csv(paste0(repo_home, "data/raw/sev_biomass_28Jan2018.csv"), 
+ab.raw <- read_csv(here("data", "raw", "sev_biomass_28Jan2018.csv"), 
                    col_types=cols(transect = col_character(),
                                   year = col_integer(), 
                                   web = col_character(), 
@@ -73,7 +71,7 @@ ab <- ab.raw %>%
 #### Calculate "Bounciness" Metrics ####
 # for each unique quad-season-kartez
 
-source(paste0(repo_home, "src/features/variance_metric_fxns.R"))
+source(here("src", "features", "variance_metric_fxns.R"))
 
 quad_metrics <- ab %>%
   
@@ -125,5 +123,5 @@ quad_metrics <- ab %>%
 # The above is not very fast, and results in much more data than will be 
 # necessary. Write out for filtering at a later step. 
 
-write_csv(quad_metrics, paste0(repo_home, "data/interim/all_response_metrics_noagg.csv"))
+write_csv(quad_metrics, here("data", "interim", "all_response_metrics_noagg.csv"))
 

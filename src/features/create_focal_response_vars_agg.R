@@ -1,10 +1,9 @@
 library(readr)
 library(dplyr)
-
-repo_home = "~/Dropbox/1_Work/1_Research/Whitney-Rudgers Lab/Sev/Plants/sevilleta-plant-traits/"
+library(here)
 
 #### Input Data ####
-quad_metrics <- read_csv(paste0(repo_home, "data/interim/all_response_metrics_noagg.csv"))
+quad_metrics <- read_csv(here("data", "interim", "all_response_metrics_noagg.csv"))
 
 # change me to select metrics!
 focal_metrics <- c("cv", "acor")
@@ -73,7 +72,7 @@ vars_tidy <- quad_metrics %>%
               arrange(desc(metric), allometry) %>%
               ungroup())
 
-write_csv(vars_tidy, paste0(repo_home, "data/interim/reponse_vars_spp_tidy.csv"))
+write_csv(vars_tidy, here("data", "interim", "reponse_vars_spp_tidy.csv"))
 
 
 # write out widened file for PICs
@@ -96,4 +95,4 @@ vars_wide <- vars_tidy %>%
   arrange(kartez)
 
 #### Write Out ####
-write_csv(vars_wide, paste0(repo_home, "data/processed/reponse_vars_spp_raw.csv"))
+write_csv(vars_wide, here("data", "processed", "reponse_vars_spp_raw.csv"))

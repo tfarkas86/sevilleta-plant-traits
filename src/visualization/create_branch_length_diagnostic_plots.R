@@ -2,14 +2,13 @@ library(readr)
 library(dplyr)
 library(ape)
 library(ggplot2)
+library(here)
 
-repo_home = "~/Dropbox/1_Work/1_Research/Whitney-Rudgers Lab/Sev/Plants/sevilleta-plant-traits/"
+all_traits <- read_csv(here("data", "interim", "all_traits_pic_prep.csv"))
 
-all_traits <- read_csv(paste0(repo_home, "data/interim/all_traits_pic_prep.csv"))
+spp_tree <- read.tree(here("data", "raw", "sev_tree_101spp.tre"))
 
-spp_tree <- read.tree(paste0(repo_home, "data/raw/sev_tree_101spp.tre"))
-
-source(paste0(repo_home, "src/features/pic_fxns.R"))
+source(here("src", "features", "pic_fxns.R"))
 
 # get all trait names
 trait_names <- all_traits %>%
@@ -54,7 +53,7 @@ for(trait in trait_names) {
               cex = 3, col="red")
   
   # write to disk
-  ggsave(filename = paste0(repo_home, "reports/figures/branch_length_diagnostics/pic_trans_diagnostics_", trait, ".pdf"),
+  ggsave(filename = here("reports", "figures", "branch_length_diagnostics", paste0("pic_trans_diagnostics_", trait, ".pdf")),
          device="pdf", height = 14, width=14)
   
 }

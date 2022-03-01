@@ -4,17 +4,16 @@ library(readr)
 library(readxl)
 library(maditr)
 library(purrr)
+library(here)
 
-repo_home = "~/Dropbox/1_Work/1_Research/Whitney-Rudgers Lab/Sev/Plants/sevilleta-plant-traits/"
-
-sd <- read_excel(paste0(repo_home, "data/raw/sev_plant_traits_collected_samples_2017.xlsx"), 
+sd <- read_excel(here("data", "raw", "sev_plant_traits_collected_samples_2017.xlsx"), 
                  sheet=2) %>%
   mutate_at(vars(kartez), as.factor) 
 
 #### Leaves ####
 # load raw data
-ad <- read_excel(paste0(repo_home, "/data/raw/sev_leaf_area_2017-18.xlsx"))
-md <- read_excel(paste0(repo_home, "/data/raw/sev_leaf_masses_2017-18.xlsx"),
+ad <- read_excel(here("data", "raw", "sev_leaf_area_2017-18.xlsx"))
+md <- read_excel(here("data", "raw", "sev_leaf_masses_2017-18.xlsx"),
                  na="NA")
 
 # merge datasets and make new variables
@@ -33,7 +32,7 @@ ld_ag <- ld %>%
   mutate_at(vars(area), funs(ifelse(is.nan(.), NA, .)))
 
 #### Stems and Root ####
-srd.raw <- read_xlsx(paste0(repo_home, "data/raw/sev_stem_root_data_2017-18.xlsx"),
+srd.raw <- read_xlsx(here("data", "raw", "sev_stem_root_data_2017-18.xlsx"),
                      sheet=1,
                      na="NA")
 
@@ -61,8 +60,8 @@ srd_ag <- srd %>%
   summarize_at(vars(sdmc, rdmc, sdens, rdens), mean, na.rm=TRUE)
 
 #### Specific Root Length ####
-rd.raw <- read_csv(paste0(repo_home, "data/processed/fine_root_shapes_2017-18.csv"))
-rmd <- read_excel(paste0(repo_home, "data/raw/fine_root_mass.xlsx")) %>%
+rd.raw <- read_csv(here("data", "processed", "fine_root_shapes_2017-18.csv"))
+rmd <- read_excel(here("data", "raw", "fine_root_mass.xlsx")) %>%
   mutate(frdmc = dry / wet) %>%
   mutate_at(vars(code), funs(as.character(.)))
 
@@ -85,7 +84,7 @@ srl_ag <- rd %>%
             fr.dens = mean(frdens))
 
 #### Isotopes ####
-cnd <- read_excel(paste0(repo_home, "data/raw/sev_plant_isotopes_2017-18.xlsx")) %>%
+cnd <- read_excel(here("data", "raw", "sev_plant_isotopes_2017-18.xlsx")) %>%
   select(-(tray:tray_id)) %>%
   left_join(sd, c("id" = "sla_code")) %>%
   select(kartez, id, site, mass:cn) %>%
@@ -95,7 +94,7 @@ cnd_ag <- cnd %>%
   summarize_at(vars(d15N, d13C, pN, pC, cn), mean, na.rm=TRUE)
 
 #### Seed Mass ####
-sed <- read_excel(paste0(repo_home, "data/raw/sev_seed_masses.xlsx")) %>%
+sed <- read_excel(here("data", "raw", "sev_seed_masses.xlsx")) %>%
   mutate(seed_mass = mass/count) %>%
   filter(include == "T")
 
@@ -115,9 +114,9 @@ sed_ag <- sed %>%
 
 # load quadrat data for flats and PJ
 
-qdf <- read.csv(paste0(repo_home, "data/raw/sev129_nppcorequadrat_20170621.csv"))
+qdf <- read.csv(here("data", "raw", "sev129_nppcorequadrat_20170621.csv"))
 
-qdp <- read.csv(paste0(repo_home, "data/raw/sev278_npppinjquadrat_20161214.csv")) %>%
+qdp <- read.csv(here("data", "raw", "sev278_npppinjquadrat_20161214.csv")) %>%
   rename(web = plot, plot = transect)
 
 nas <- c("-888", "-999", -888, -999, "NONE") # na values
@@ -174,11 +173,11 @@ hd_ag <- bind_rows(hdA, hdF, hdI) %>%
   as_tibble() 
 
 #### Life History ####
-allsplst <- read_csv(paste0(repo_home, "data/raw/sev_all_spp_list_augmented.csv")) %>%
+allsplst <- read_csv(here("data", "raw", "sev_all_spp_list_augmented.csv")) %>%
   select(kartez, life_cycle, life_form, native, path, a_p, g_f, apgf) %>%
   mutate_at(vars(2:8), as.factor)
 
-splst <- read_csv(paste0(repo_home, "data/raw/traits_spp_list.csv"))
+splst <- read_csv(here("data", "raw", "traits_spp_list.csv"))
 
 lhd <- left_join(splst, allsplst, by="kartez") %>% 
   as_tibble() %>%
@@ -206,5 +205,5 @@ ad_ag <- reduce(list(lhd, hd_ag, ld_ag, cnd_ag, srd_ag, srl_ag, sed_ag),
   mutate_at(vars(avg.height_A:seed_mass), round, digits=4)
 
 #### Write Out ####
-write.csv(ad_ag, file=paste0(repo_home, "/data/processed/sev_all_traits_raw.csv"), 
+write.csv(ad_ag, file=here("data", "processed", "sev_all_traits_raw.csv"), 
           row.names=FALSE)

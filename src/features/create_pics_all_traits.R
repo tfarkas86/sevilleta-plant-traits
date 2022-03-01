@@ -1,13 +1,12 @@
 library(readr)
 library(dplyr)
+library(here)
 
-repo_home = "~/Dropbox/1_Work/1_Research/Whitney-Rudgers Lab/Sev/Plants/sevilleta-plant-traits/"
+all_traits <- read_csv(here("data", "interim", "all_traits_pic_prep.csv"))
 
-all_traits <- read_csv(paste0(repo_home, "data/interim/all_traits_pic_prep.csv"))
+spp_tree <- read.tree(here("data", "raw", "sev_tree_101spp.tre"))
 
-spp_tree <- read.tree(paste0(repo_home, "data/raw/sev_tree_101spp.tre"))
-
-source(paste0(repo_home, "src/features/pic_fxns.R"))
+source(here("src", "features", "pic_fxns.R"))
 
 # manually chosen transformations
 # see reports/figures/branch_length_diagnostic plots
@@ -67,5 +66,5 @@ all_pics_tib <- lapply(names(all_pics_list), function(t) {
 }) %>%
   reduce(full_join, by="node")
 
-write_csv(all_pics_tib, paste0(repo_home, "data/processed/all_pics_joined.csv"))
+write_csv(all_pics_tib, here("data", "processed", "all_pics_joined.csv"))
 

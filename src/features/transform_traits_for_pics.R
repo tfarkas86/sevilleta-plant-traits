@@ -1,10 +1,9 @@
 library(readr)
 library(dplyr)
-
-repo_home = "~/Dropbox/1_Work/1_Research/Whitney-Rudgers Lab/Sev/Plants/sevilleta-plant-traits/"
+library(here)
 
 # import and prep raw trait data
-raw_traits <- read_csv(paste0(repo_home, "data/processed/sev_all_traits_raw.csv")) %>%
+raw_traits <- read_csv(here("data", "processed", "sev_all_traits_raw.csv")) %>%
   
   # just not sure about this ID, plust not much data
   filter(! kartez %in% c("DAJA?")) %>% 
@@ -25,7 +24,7 @@ raw_traits <- read_csv(paste0(repo_home, "data/processed/sev_all_traits_raw.csv"
   group_by(kartez) 
 
 #load("~/Dropbox/1_Work/1_Research/Whitney-Rudgers Lab/Sev/Plants/sev_traits_cv_manuscript/Data/raw_bounce_wide_q1090m.RData")
-vars_wide <- read_csv(paste0(repo_home, "data/processed/reponse_vars_spp_raw.csv"))
+vars_wide <- read_csv(here("data", "processed", "reponse_vars_spp_raw.csv"))
 
 all_traits <- 
   # now there are duplicate kartez codes, so summarize
@@ -42,4 +41,4 @@ all_traits <-
   # join in cv values
   inner_join(vars_wide)
 
-write_csv(all_traits, paste0(repo_home, "data/interim/all_traits_pic_prep.csv"))
+write_csv(all_traits, here("data", "interim", "all_traits_pic_prep.csv"))
